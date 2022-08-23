@@ -212,18 +212,25 @@ ul {
 #contenido1 {
     display: flex;
     margin-left: 20px;
+    gap:40px;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    background-color: aquamarine;
-    border: solid 3px black;
+    background-color: rgba(127, 255, 212, 0.568);
     padding: 10px;
 }
 
 #contenido1>button {
-    width: 100%;
+    width: 50%;
     height: 50px;
     opacity: 0.75;
+    transition:1s;
+}
+
+#contenido1>button:hover{
+
+    opacity:1;
+    width:100%;
 }
 
 /* cartas que aparecen en la pagina */
@@ -259,12 +266,16 @@ ul {
 
 .card__btn {
     margin-top: 10px;
-    width: 70%;
+    width: 50%;
     height: 30px;
     opacity: 0.75;
     background-color: blueviolet;
+    transition: 1s;
 }
 
+.card__btn:hover{
+    width:100%
+}
 /* reglas aplicada a los titulos siguientes */
 
 .titulos {
@@ -294,11 +305,16 @@ ul {
     align-items: center;
     justify-content: center;
     border: solid 2px black;
+    transition:1s;
+}
+
+#quienes_somos:hover{
+    background-color: rgba(19, 19, 141, 0.71);
+    
 }
 
 #quienes_somos__desc {
     color: rgb(33, 124, 124);
-
 }
 
 #servicios {
@@ -367,6 +383,14 @@ footer {
     gap: 40px;
     color: black;
 
+}
+
+.menu_footer li{
+    transition:1s;
+    
+}
+.menu_footer li:hover{
+    transform:scale(1.2);
 }
 
 .menu_footer a {
