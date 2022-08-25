@@ -4,9 +4,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
 
 /* aqui se le aplica reglas a toda la pagina */
+
+a{
+    text-decoration: none;
+}
+
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: content-box;
 }
 
 .main>h2 {
@@ -23,6 +29,7 @@
 }
 
 body {
+    line-height: normal;
     background-color: rgba(19, 19, 141, 0.71);
     background-image: url(../img/330738.jpg);
     font-family: 'Mouse Memoirs', sans-serif;
@@ -35,7 +42,7 @@ ul {
     list-style: none;
 }
 /* menu de la pagina */
-.container {
+.container1 {
 
     display: grid;
     height: 100vh;
@@ -188,8 +195,12 @@ ul {
     align-items: center;
     gap: 40px;
     list-style: none;
-    
-    
+}
+
+.menu h1 {
+
+    font-size: xx-large;
+    margin-right: 20px;
 }
 
 .menuMobile{
@@ -218,6 +229,7 @@ ul {
     justify-content: center;
     background-color: rgba(127, 255, 212, 0.568);
     padding: 10px;
+    font-size: x-large;
 }
 
 #contenido1>button {
@@ -239,7 +251,7 @@ ul {
     gap: 20px;
 }
 
-.card {
+.card1 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -249,6 +261,12 @@ ul {
     margin-block: 10px;
     padding: 10px;
     border-radius: 10px;
+    height: 450px;
+}
+
+.card1 p{
+    font-size: x-large;
+    margin-bottom: 40px;
 }
 
 .card__desc {
@@ -258,6 +276,7 @@ ul {
 .card__img {
     width: 200px;
     height: 150px;
+    margin-bottom: 30px;
 }
 
 .card__tittle {
@@ -269,7 +288,6 @@ ul {
     width: 50%;
     height: 30px;
     opacity: 0.75;
-    background-color: blueviolet;
     transition: 1s;
 }
 
@@ -281,10 +299,12 @@ ul {
 .titulos {
     background-color: rgba(255, 0, 255, 0.753);
     width: 100%;
+    font-size: xx-large;
     text-align: center;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    margin-block: 0;
 
 }
 
@@ -315,6 +335,7 @@ ul {
 
 #quienes_somos__desc {
     color: rgb(33, 124, 124);
+    font-size: x-large;
 }
 
 #servicios {
@@ -358,7 +379,7 @@ footer {
     padding: 20px;
     color: aliceblue;
     background-color: rgba(19, 19, 141, 0.71);
-    margin-inline: 20px;
+    font-size: x-large;
 }
 
 .info_contact {
@@ -797,7 +818,7 @@ input,textarea {
         justify-content: center;
     }
 
-    .card {
+    .card1 {
         display: flex;
         flex-direction: column;
         align-items: center;
