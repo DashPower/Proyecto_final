@@ -360,6 +360,8 @@ ul {
 }
 
 /* footer  */
+
+
 .red_social {
     display: flex;
     flex-direction: column;
@@ -734,8 +736,8 @@ input,textarea {
     .menuMobile input {
         display: none;
       }
-      
-    label {
+
+      #menu1{
         box-sizing: border-box;
         display: inline-block;
         border: 1px solid black;
@@ -749,6 +751,7 @@ input,textarea {
         position: absolute;
       }
       
+      
       /* Estilo del boton cuando se pasa el mouse por encima*/
     label:hover{
         background: grey;
@@ -760,7 +763,7 @@ input,textarea {
       }
       
     .menuMobile ul{
-        width: 100vw;
+        width: 100%;
         left: 0px;
         position: relative;
         top: 70px;
@@ -807,7 +810,7 @@ input,textarea {
         color: white;
         text-align: center;
         align-items: center;
-        gap: 80px;
+        gap: 40px;
         margin-right: 20px;
     }
 
@@ -904,8 +907,18 @@ input,textarea {
         font-size: larger;
     }
 
+    h2{
+        margin: 0px;
+        padding: 0px;
+    }
     footer{
         margin: 0px;
+        font-size: 1em;
+    }
+    
+    footer ul{
+        margin: 0px;
+        padding: 0px;
     }
     #texto_contenido_principal {
         width: 50%;
@@ -932,7 +945,7 @@ input,textarea {
 
     .cards__test div {
 
-        width: 100vw;
+        width: 100%;
     }
 
     .texto_servicios {
