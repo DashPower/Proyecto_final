@@ -1,0 +1,42 @@
+.cards__test {
+    display: flex;
+    gap: 20px;
+
+    .card1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        border: solid 2px black;
+        background-color: rgb(33, 124, 124);
+        margin-block: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        height: 450px;
+        & p{
+            font-size: x-large;
+            margin-bottom: 40px;
+        }
+        .card__desc {
+            height: 100px;
+        }
+        .card__img {
+            width: 200px;
+            height: 150px;
+            margin-bottom: 30px;
+        }
+        .card__tittle {
+            font-family: 'Roboto', sans-serif;
+        }
+        .card__btn {
+            margin-top: 10px;
+            width: 50%;
+            height: 30px;
+            opacity: 0.75;
+            transition: 1s;
+        }
+        .card__btn:hover{
+            width:100%
+        }
+    }
+}

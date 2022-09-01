@@ -41,15 +41,16 @@ body {
 ul {
     list-style: none;
 }
-/* menu de la pagina */
+
 .container1 {
 
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr 1fr;
     grid-template-areas: "header"
         "main"
+        "titulos"
         "footer ";
 }
 
@@ -169,17 +170,22 @@ ul {
 .container_test>footer {
     grid-area: footer;
 }
-.container>header {
+.container1>header {
 
     grid-area: header;
 }
 
-.container>main {
+.container1>main {
 
     grid-area: main;
 }
 
-.container>footer {
+.container1>.titulos{
+
+    grid-area: titulos;
+}
+
+.container1>footer {
 
     grid-area: footer;
 }

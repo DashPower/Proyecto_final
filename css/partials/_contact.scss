@@ -1,0 +1,66 @@
+.container_contact{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "header"
+        "contact_page"
+        "titulos"
+        "footer";
+    
+    >.titulos{
+            grid-area: titulos;
+    }
+    >header{
+            grid-area: header;
+    }   
+    >#contact_page{
+        
+            grid-area: contact_page;
+    }  
+    >footer {
+            grid-area: footer;
+    }
+
+    #contact_page {
+
+        display: flex;
+        flex-direction: row;
+        height: 800px;
+        padding: 20px;
+        margin: 5%;
+        
+        #contact_contenido {
+            background-image: url(../img/Contactanos.jpeg);
+            background-size: 1000px 800px;
+            background-repeat: no-repeat;
+            width: 50%;
+            flex-direction: row;
+        }
+        #contact_img {
+            display: flex;
+            justify-content: start;
+            padding: 20px;
+            background-color: rgba(0, 0, 255, 0.363);
+        }
+    }
+    #form_contact {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        background-color: rgba(245, 245, 245, 0.377);
+        width: 50%;
+        flex-direction: column;
+        padding-left: 100px;
+        
+        #texto_titulo {
+            color: black;
+            padding-bottom: 25px;
+            text-align: center;
+            justify-content: center;
+            width: 60%;
+        }
+    }
+
+}

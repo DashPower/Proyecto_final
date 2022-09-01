@@ -1,0 +1,32 @@
+header{
+
+	#inicio {
+
+    	position: absolute;
+    	margin-inline: 5px;
+	}
+
+	.menu {
+    	display: flex;
+    	flex-wrap: wrap;
+    	flex-direction: row;
+    	justify-content: end;
+    	padding-right: 10px;
+    	background-color: $maincolor;
+    	height: 70px;
+    	align-items: center;
+    	gap: 40px;
+    	list-style: none;
+            >h1 {
+
+                font-size: xx-large;
+                margin-right: 20px;
+            }
+	}
+
+	.menuMobile{
+
+    	display: none;
+	}
+
+}

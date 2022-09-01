@@ -1,0 +1,49 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+
+    & a{
+        text-decoration: none;
+    }
+    
+}
+
+.main>h2 {
+
+    margin-top: 50px;
+}
+
+ul {
+    list-style: none;
+}
+
+.titulos {
+    background-color: rgba(255, 0, 255, 0.753);
+    width: 100%;
+    font-size: xx-large;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-block: 0;
+}
+
+body {
+    line-height: normal;
+    background-color: rgba(19, 19, 141, 0.71);
+    background-image: url(../img/330738.jpg);
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: x-large;
+    font-weight: 200;
+    width: 100%;
+}
+
+.btn_medio {
+    margin-block: 20px;
+    width: 40%;
+    height: 30px;
+    opacity: 0.75;
+    background-color: blueviolet;
+    border: solid 2px black
+}
