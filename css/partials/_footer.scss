@@ -65,4 +65,34 @@ footer {
     
     
 }
-  
+
+$redes: (
+
+    facebook: blue,
+    instagram: pink,
+    whatsapp: rgba(19, 226, 19, 0.815)
+
+);
+
+@each $redsocial, $colordered in $redes {
+    .fa-#{$redsocial} {
+        background-color: $colordered;
+    }
+}
+
+.fa-facebook{
+   
+    width: 60px;
+    border-radius: 5px;
+    &:hover{
+        opacity: 0.65;
+    }
+}
+
+.fa-whatsapp{
+    @extend .fa-facebook
+}
+
+.fa-instagram{
+    @extend .fa-facebook
+}

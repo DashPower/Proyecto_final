@@ -1,3 +1,7 @@
+@mixin tamanos($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
 .cards__test {
     display: flex;
     gap: 20px;
@@ -8,7 +12,7 @@
         align-items: center;
         justify-content: flex-start;
         border: solid 2px black;
-        background-color: rgb(33, 124, 124);
+        background-color: map-get($redes,whatsapp);
         margin-block: 10px;
         padding: 10px;
         border-radius: 10px;
@@ -21,8 +25,7 @@
             height: 100px;
         }
         .card__img {
-            width: 200px;
-            height: 150px;
+            @include tamanos(200px,100px);
             margin-bottom: 30px;
         }
         .card__tittle {
@@ -40,3 +43,6 @@
         }
     }
 }
+
+
+

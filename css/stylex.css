@@ -65,13 +65,47 @@ header .menu {
   list-style: none;
 }
 header .menu > h1 {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   font-size: xx-large;
   margin-right: 20px;
+}
+header .menu .menu_item1 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+header .menu .menu_item2 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+header .menu .menu_item3 {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+header .menu .menu_item4 {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 header .menuMobile {
   display: none;
 }
 
+@-webkit-keyframes slide-top {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes slide-top {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
 .container1 {
   display: grid;
   height: 100vh;
@@ -211,6 +245,26 @@ footer .info_contact_container .menu_footer a {
   color: rgb(47, 169, 151);
 }
 
+.fa-facebook, .fa-instagram, .fa-whatsapp {
+  background-color: blue;
+}
+
+.fa-instagram {
+  background-color: pink;
+}
+
+.fa-whatsapp {
+  background-color: rgba(19, 226, 19, 0.815);
+}
+
+.fa-facebook, .fa-instagram, .fa-whatsapp {
+  width: 60px;
+  border-radius: 5px;
+}
+.fa-facebook:hover, .fa-instagram:hover, .fa-whatsapp:hover {
+  opacity: 0.65;
+}
+
 .cards__test {
   display: flex;
   gap: 20px;
@@ -221,7 +275,7 @@ footer .info_contact_container .menu_footer a {
   align-items: center;
   justify-content: flex-start;
   border: solid 2px black;
-  background-color: rgb(33, 124, 124);
+  background-color: rgba(19, 226, 19, 0.815);
   margin-block: 10px;
   padding: 10px;
   border-radius: 10px;
@@ -236,7 +290,7 @@ footer .info_contact_container .menu_footer a {
 }
 .cards__test .card1 .card__img {
   width: 200px;
-  height: 150px;
+  height: 100px;
   margin-bottom: 30px;
 }
 .cards__test .card1 .card__tittle {
