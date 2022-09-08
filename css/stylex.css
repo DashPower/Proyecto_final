@@ -227,6 +227,7 @@ footer .info_contact_container .info_contact > ul:nth-child(2) {
 }
 footer .info_contact_container .info_contact .footer_contacto {
   display: flex;
+  gap: 20px;
   flex-wrap: wrap;
 }
 footer .info_contact_container .menu_footer {
@@ -290,7 +291,7 @@ footer .info_contact_container .menu_footer a {
 }
 .cards__test .card1 .card__img {
   width: 200px;
-  height: 100px;
+  height: 30%;
   margin-bottom: 30px;
 }
 .cards__test .card1 .card__tittle {

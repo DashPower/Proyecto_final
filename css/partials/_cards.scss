@@ -25,7 +25,7 @@
             height: 100px;
         }
         .card__img {
-            @include tamanos(200px,100px);
+            @include tamanos(200px,30%);
             margin-bottom: 30px;
         }
         .card__tittle {
