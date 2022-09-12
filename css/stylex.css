@@ -335,13 +335,14 @@ footer .info_contact_container .menu_footer a {
   flex-direction: column;
   padding: 20px;
   margin: 5%;
-  background-image: url(../img/Testimonios.jpg);
+  background-image: url(../../img/smiling-businesspeople-shaking-hands-during-meeting-office.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   align-items: center;
   justify-content: center;
-  height: 500px;
+  height: 1000px;
   margin-bottom: 20px;
+  color: white;
 }
 .container_test #contenido_testimonios #contenido_testimonio__principal {
   display: flex;
@@ -354,7 +355,8 @@ footer .info_contact_container .menu_footer a {
 }
 .container_test #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal #texto_contenido_principal {
   width: 40%;
-  height: 50px;
+  height: 100px;
+  background-color: rgba(19, 19, 141, 0.71);
 }
 .container_test #cartas_testimonios {
   padding: 20px;

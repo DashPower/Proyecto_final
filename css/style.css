@@ -277,6 +277,7 @@ ul {
 
 .card__desc {
     height: 100px;
+    color: white;
 }
 
 .card__img {
@@ -319,12 +320,16 @@ ul {
     margin-block: 20px;
     width: 40%;
     height: 30px;
-    opacity: 0.75;
-    background-color: blueviolet;
-    border: solid 2px black
+    background-color:rgba(19, 19, 141, 0.71);
+    border: solid 2px black;
 }
 
-#quienes_somos {
+.btn_medio>a {
+    
+    color:aliceblue;
+}
+
+.quienes_somos {
 
     display: flex;
     flex-direction: column;
@@ -340,8 +345,8 @@ ul {
 }
 
 #quienes_somos__desc {
-    color: rgb(33, 124, 124);
     font-size: x-large;
+    color: white;
 }
 
 #servicios {
