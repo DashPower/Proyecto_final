@@ -1,11 +1,15 @@
 * {
     margin: 0px;
     padding: 0px;
-    box-sizing: content-box;
 
     & a{
         text-decoration: none;
+        color: white;
     }
+}
+
+p{
+    color: white;
 }
 
 .main>h2 {
@@ -20,21 +24,18 @@ ul {
 .titulos {
     background-color: rgba(255, 0, 255, 0.753);
     width: 100%;
-    font-size: xx-large;
+    font-size: 1.2em;
     text-align: center;
     justify-content: center;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     margin-block: 0;
 }
 
 body {
     line-height: normal;
-    background-color: rgba(19, 19, 141, 0.71);
-    background-image: url(../img/330738.jpg);
-    font-family: 'Mouse Memoirs', sans-serif;
-    font-size: x-large;
-    font-weight: 200;
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: large;
+    font-weight: 700;
     width: 100%;
 }
 

@@ -11,17 +11,17 @@ header{
     	flex-wrap: wrap;
     	flex-direction: row;
     	justify-content: end;
-    	padding-right: 10px;
     	background-color: $maincolor;
     	height: 70px;
     	align-items: center;
-    	gap: 40px;
+    	gap: 5px;
     	list-style: none;
             >h1 {
 				-webkit-animation:slide-top .5s cubic-bezier(.25,.46,.45,.94) both;
 				animation:slide-top .5s cubic-bezier(.25,.46,.45,.94) both;
-                font-size:xx-large;
+                font-size:1.3em;
                 margin-right: 20px;
+				
             }
 		@for $item from 1 through 4 {
 			.menu_item#{$item} {

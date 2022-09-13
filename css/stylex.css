@@ -1,13 +1,17 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
+@import url(../../fonts/Roboto-Bold.ttf);
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: content-box;
 }
 * a {
   text-decoration: none;
+  color: white;
+}
+
+p {
+  color: white;
 }
 
 .main > h2 {
@@ -21,21 +25,18 @@ ul {
 .titulos {
   background-color: rgba(255, 0, 255, 0.753);
   width: 100%;
-  font-size: xx-large;
+  font-size: 1.2em;
   text-align: center;
   justify-content: center;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   margin-block: 0;
 }
 
 body {
   line-height: normal;
-  background-color: rgba(19, 19, 141, 0.71);
-  background-image: url(../img/330738.jpg);
-  font-family: "Mouse Memoirs", sans-serif;
-  font-size: x-large;
-  font-weight: 200;
+  font-family: "Roboto-Bold", sans-serif;
+  font-size: large;
+  font-weight: 700;
   width: 100%;
 }
 
@@ -57,17 +58,16 @@ header .menu {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: end;
-  padding-right: 10px;
   background-color: rgba(236, 2, 127, 0.768627451);
   height: 70px;
   align-items: center;
-  gap: 40px;
+  gap: 5px;
   list-style: none;
 }
 header .menu > h1 {
   -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  font-size: xx-large;
+  font-size: 1.3em;
   margin-right: 20px;
 }
 header .menu .menu_item1 {
@@ -120,11 +120,13 @@ header .menuMobile {
 
 .container1 > .main {
   grid-area: main;
-  padding: 20px 20px 0px 20px;
-  width: calc(100vw - 40px);
 }
 .container1 > .main #contenido_principal {
   display: flex;
+  background: url(../../img/Fondo.jpg) center/cover no-repeat;
+  height: 550px;
+  width: 100%;
+  justify-content: end;
 }
 .container1 > .main #contenido_principal #contenido1 {
   display: flex;
@@ -133,9 +135,23 @@ header .menuMobile {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgba(127, 255, 212, 0.568);
-  padding: 10px;
-  font-size: x-large;
+  font-size: 1.2em;
+  width: 40%;
+  padding: 20px;
+  color: white;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.733), transparent);
+  text-align: center;
+}
+.container1 > .main #contenido_principal #contenido1 > h2 {
+  font-size: 2.2em;
+  font-weight: bold;
+}
+.container1 > .main #contenido_principal #contenido1 > h4 {
+  font-size: 1.5em;
+}
+.container1 > .main #contenido_principal #contenido1 > p {
+  font-size: 0.9em;
+  font-weight: 400;
 }
 .container1 > .main #contenido_principal #contenido1 > button {
   width: 50%;
@@ -152,12 +168,11 @@ header .menuMobile {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: solid 2px black;
   transition: 1s;
+  color: black;
 }
-.container1 > .main #contenido_principal .quienes_somos #quienes_somos__desc {
-  color: rgb(33, 124, 124);
-  font-size: x-large;
+.container1 > .main #contenido_principal .quienes_somos #quienes_somos__desc > p {
+  color: black;
 }
 .container1 > .main #contenido_principal #quienes_somos:hover {
   background-color: rgba(19, 19, 141, 0.71);
@@ -168,22 +183,16 @@ header .menuMobile {
   align-items: center;
   justify-content: center;
 }
-.container1 > .main #contenido_principal #servicios #card__servicios {
-  display: flex;
-  gap: 20px;
-}
 .container1 > .main #contenido_principal #contactanos_index {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-
-.container1 > .titulos {
+.container1 > .main .container1 > .titulos {
   grid-area: titulos;
 }
-
-.container1 > footer {
+.container1 > .main .container1 > footer {
   grid-area: footer;
 }
 
@@ -247,64 +256,61 @@ footer .info_contact_container .menu_footer a {
 }
 
 .fa-facebook, .fa-instagram, .fa-whatsapp {
-  background-color: blue;
+  background-color: rgba(128, 128, 128, 0.425);
 }
 
 .fa-instagram {
-  background-color: pink;
+  background-color: rgba(128, 128, 128, 0.432);
 }
 
 .fa-whatsapp {
-  background-color: rgba(19, 226, 19, 0.815);
+  background-color: rgba(128, 128, 128, 0.527);
 }
 
 .fa-facebook, .fa-instagram, .fa-whatsapp {
-  width: 60px;
   border-radius: 5px;
 }
 .fa-facebook:hover, .fa-instagram:hover, .fa-whatsapp:hover {
   opacity: 0.65;
 }
 
-.cards__test {
+.cards__test, #card__servicios {
   display: flex;
   gap: 20px;
 }
-.cards__test .card1 {
+.cards__test .card1, #card__servicios .card1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  border: solid 2px black;
-  background-color: rgba(19, 226, 19, 0.815);
+  background-color: rgba(236, 2, 127, 0.768627451);
   margin-block: 10px;
   padding: 10px;
   border-radius: 10px;
-  height: 450px;
 }
-.cards__test .card1 p {
+.cards__test .card1 p, #card__servicios .card1 p {
   font-size: x-large;
   margin-bottom: 40px;
 }
-.cards__test .card1 .card__desc {
-  height: 100px;
+.cards__test .card1 .card__desc, #card__servicios .card1 .card__desc {
+  height: 200px;
 }
-.cards__test .card1 .card__img {
+.cards__test .card1 .card__img, #card__servicios .card1 .card__img {
   width: 200px;
   height: 30%;
   margin-bottom: 30px;
 }
-.cards__test .card1 .card__tittle {
+.cards__test .card1 .card__tittle, #card__servicios .card1 .card__tittle {
   font-family: "Roboto", sans-serif;
 }
-.cards__test .card1 .card__btn {
+.cards__test .card1 .card__btn, #card__servicios .card1 .card__btn {
   margin-top: 10px;
   width: 50%;
   height: 30px;
   opacity: 0.75;
   transition: 1s;
 }
-.cards__test .card1 .card__btn:hover {
+.cards__test .card1 .card__btn:hover, #card__servicios .card1 .card__btn:hover {
   width: 100%;
 }
 
@@ -342,7 +348,7 @@ footer .info_contact_container .menu_footer a {
   justify-content: center;
   height: 1000px;
   margin-bottom: 20px;
-  color: white;
+  color: black;
 }
 .container_test #contenido_testimonios #contenido_testimonio__principal {
   display: flex;
@@ -356,7 +362,7 @@ footer .info_contact_container .menu_footer a {
 .container_test #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal #texto_contenido_principal {
   width: 40%;
   height: 100px;
-  background-color: rgba(19, 19, 141, 0.71);
+  text-align: end;
 }
 .container_test #cartas_testimonios {
   padding: 20px;
@@ -675,8 +681,7 @@ footer .info_contact_container .menu_footer a {
     max-height: 100px;
   }
   .card__desc {
-    height: 100px;
-    overflow: auto;
+    height: 300px;
   }
   .card__tittle {
     padding-bottom: 10px;

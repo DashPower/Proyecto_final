@@ -42,8 +42,8 @@
             justify-content: center;
             height: 1000px;
             margin-bottom: 20px;
-            color: white;
-            
+            color: black;
+                        
             #contenido_testimonio__principal {
                 display: flex;
                 
@@ -53,13 +53,12 @@
                     align-items: flex-end;
                     justify-content: end;
                     flex-direction: column;
-                    
-                    
+
                     #texto_contenido_principal {
                         width: 40%;
                         height: 100px;
-                        background-color:$secondarycolor;
-                
+                        text-align: end;
+                               
                     }
                 }
             }
