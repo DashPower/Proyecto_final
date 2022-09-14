@@ -11,11 +11,7 @@
 }
 
 p {
-  color: white;
-}
-
-.main > h2 {
-  margin-top: 50px;
+  color: black;
 }
 
 ul {
@@ -23,13 +19,16 @@ ul {
 }
 
 .titulos {
-  background-color: rgba(255, 0, 255, 0.753);
+  background-color: rgb(24, 13, 52);
   width: 100%;
-  font-size: 1.2em;
+  font-size: 1.5em;
   text-align: center;
   justify-content: center;
   font-weight: 700;
   margin-block: 0;
+  font-weight: bold;
+  padding: 20px;
+  color: rgb(255, 0, 255);
 }
 
 body {
@@ -38,28 +37,36 @@ body {
   font-size: large;
   font-weight: 700;
   width: 100%;
+  background-color: #E6E6E6;
 }
 
 .btn_medio {
   margin-block: 20px;
   width: 40%;
-  height: 30px;
+  height: 50px;
   opacity: 0.75;
-  background-color: blueviolet;
-  border: solid 2px black;
+}
+.btn_medio a {
+  color: rgb(24, 13, 52);
+}
+
+.btncolor {
+  background-color: rgb(255, 0, 255);
+  font-weight: bold;
 }
 
 header #inicio {
   position: absolute;
   margin-inline: 5px;
+  margin-top: 8px;
 }
 header .menu {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: end;
-  background-color: rgba(236, 2, 127, 0.768627451);
-  height: 70px;
+  background-color: rgb(24, 13, 52);
+  height: 90px;
   align-items: center;
   gap: 5px;
   list-style: none;
@@ -106,20 +113,35 @@ header .menuMobile {
     transform: translateY(10px);
   }
 }
-.container1 {
-  display: grid;
-  height: 100vh;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 2fr 1fr 1fr;
-  grid-template-areas: "header" "main" "titulos" "footer ";
+/* .container1{
+
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr 1fr;
+    grid-template-areas: "header"
+        "main"
+        "titulos"
+        "footer ";
+
+
 }
 
-.container1 > .header {
-  grid-area: header;
-}
+.container1> .header {
 
+    grid-area: header;
+}
+ */
 .container1 > .main {
-  grid-area: main;
+  /* .container1>.titulos{
+
+      grid-area: titulos;
+  }
+
+  .container1> footer {
+
+      grid-area: footer;
+  } */
 }
 .container1 > .main #contenido_principal {
   display: flex;
@@ -131,7 +153,7 @@ header .menuMobile {
 .container1 > .main #contenido_principal #contenido1 {
   display: flex;
   margin-left: 20px;
-  gap: 40px;
+  gap: 10px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -143,13 +165,16 @@ header .menuMobile {
   text-align: center;
 }
 .container1 > .main #contenido_principal #contenido1 > h2 {
-  font-size: 2.2em;
+  font-size: 2.3em;
   font-weight: bold;
+  color: rgb(255, 0, 255);
+  margin: 0px;
 }
 .container1 > .main #contenido_principal #contenido1 > h4 {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 .container1 > .main #contenido_principal #contenido1 > p {
+  color: white;
   font-size: 0.9em;
   font-weight: 400;
 }
@@ -158,50 +183,48 @@ header .menuMobile {
   height: 50px;
   opacity: 0.75;
   transition: 1s;
+  background-color: rgb(255, 0, 255);
 }
 .container1 > .main #contenido_principal #contenido1 > button:hover {
   opacity: 1;
   width: 100%;
 }
-.container1 > .main #contenido_principal .quienes_somos {
+.container1 > .main .servicios {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: 1s;
-  color: black;
+  padding: 20px;
+  background-color: #E6E6E6;
 }
-.container1 > .main #contenido_principal .quienes_somos #quienes_somos__desc > p {
-  color: black;
-}
-.container1 > .main #contenido_principal #quienes_somos:hover {
+.container1 > .main #contactanos_index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: rgba(19, 19, 141, 0.71);
 }
-.container1 > .main #contenido_principal #servicios {
+.container1 > .main .quienes_somos {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: rgba(19, 19, 141, 0.71);
 }
-.container1 > .main #contenido_principal #contactanos_index {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.container1 > .main .container1 > .titulos {
-  grid-area: titulos;
-}
-.container1 > .main .container1 > footer {
-  grid-area: footer;
+.container1 > .main .quienes_somos #quienes_somos__desc {
+  font-size: 1em;
+  color: white;
+  text-align: center;
+  padding: 20px 70px 0px 70px;
+  font-weight: 400;
 }
 
 footer {
   display: flex;
   padding: 20px;
   color: aliceblue;
-  background-color: rgba(19, 19, 141, 0.71);
-  font-size: x-large;
+  background-color: rgb(24, 13, 52);
+  font-size: 1em;
 }
 footer .red_social {
   display: flex;
@@ -274,6 +297,69 @@ footer .info_contact_container .menu_footer a {
   opacity: 0.65;
 }
 
+.card-title {
+  font-weight: bold;
+  color: rgba(192, 8, 192, 0.753);
+}
+
+.card-text {
+  font-weight: 400;
+  height: 150px;
+}
+
+.testimonios {
+  padding: 50px 30px 50px 30px;
+  height: 600px;
+  background-color: #E6E6E6;
+}
+
+.carousel-item {
+  height: 600px;
+}
+
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (min-width: 768px) {
+  .carousel-item {
+    margin-right: 0;
+    flex: 0 0 33.333333%;
+    display: block;
+  }
+  .carousel-inner {
+    display: flex;
+  }
+}
+.card .img-wrapper {
+  max-width: 100%;
+  height: 13em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card img {
+  max-height: 100%;
+}
+
+@media (max-width: 767px) {
+  .card .img-wrapper {
+    height: 17em;
+  }
+}
 .cards__test, #card__servicios {
   display: flex;
   gap: 20px;
@@ -283,10 +369,11 @@ footer .info_contact_container .menu_footer a {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background-color: rgba(236, 2, 127, 0.768627451);
+  background-color: rgb(24, 13, 52);
   margin-block: 10px;
   padding: 10px;
   border-radius: 10px;
+  width: 100%;
 }
 .cards__test .card1 p, #card__servicios .card1 p {
   font-size: x-large;
@@ -348,21 +435,25 @@ footer .info_contact_container .menu_footer a {
   justify-content: center;
   height: 1000px;
   margin-bottom: 20px;
-  color: black;
 }
 .container_test #contenido_testimonios #contenido_testimonio__principal {
   display: flex;
+  background-color: rgba(19, 19, 141, 0.71);
+  color: white;
 }
 .container_test #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal {
   display: flex;
   align-items: flex-end;
   justify-content: end;
   flex-direction: column;
+  gap: 20px;
 }
 .container_test #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal #texto_contenido_principal {
   width: 40%;
   height: 100px;
   text-align: end;
+  color: white;
+  font-weight: 400;
 }
 .container_test #cartas_testimonios {
   padding: 20px;
@@ -397,6 +488,7 @@ footer .info_contact_container .menu_footer a {
 .container_servicios #contenedores_servicios .contenedor_servicios {
   display: flex;
   flex-direction: column;
+  background-color: #E6E6E6;
 }
 .container_servicios #contenedores_servicios .contenedor_servicios #imagen_servicios {
   display: flex;
@@ -410,16 +502,18 @@ footer .info_contact_container .menu_footer a {
   margin-bottom: 20px;
 }
 .container_servicios #contenedores_servicios .contenedor_servicios #imagen_servicios .titulos_servicios {
-  color: aliceblue;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  color: rgb(24, 13, 52);
+  background-color: rgba(19, 19, 141, 0.71);
 }
 .container_servicios #contenedores_servicios .contenedor_servicios .texto_servicios {
-  font-size: x-large;
+  font-size: 1.3em;
   color: #ffffff;
   margin-bottom: 10px;
   text-align: center;
   justify-content: center;
   background-color: rgba(19, 19, 141, 0.71);
+  font-weight: 400;
 }
 .container_servicios #contenedores_servicios .contenedor_servicios #imagen_servicios2 {
   display: flex;
@@ -480,6 +574,7 @@ footer .info_contact_container .menu_footer a {
   align-items: center;
   justify-content: center;
   padding: 10%;
+  background-color: #E6E6E6;
 }
 .container_quienes #contenedor_quienes_somos .contenedores_quienes_somos {
   display: flex;
@@ -496,9 +591,10 @@ footer .info_contact_container .menu_footer a {
   margin-bottom: 5%;
 }
 .container_quienes #contenedor_quienes_somos .texto_quienes_somos {
-  font-size: x-large;
-  color: white;
+  font-size: 1em;
+  color: black;
   margin-bottom: 20px;
+  font-weight: 400;
 }
 
 .container_contact {
@@ -544,7 +640,7 @@ footer .info_contact_container .menu_footer a {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  background-color: rgba(245, 245, 245, 0.377);
+  background-color: rgba(19, 19, 141, 0.71);
   width: 50%;
   flex-direction: column;
   padding-left: 100px;

@@ -27,6 +27,7 @@
         align-items: center;
         justify-content: center;
         padding: 10%;
+        background-color: #E6E6E6;
         
         .contenedores_quienes_somos {
 
@@ -47,9 +48,10 @@
         }
         
         .texto_quienes_somos {
-            font-size: x-large;
-            color: white;
+            font-size: 1em;
+            color: black;
             margin-bottom: 20px;
+            font-weight: 400;
         }    
         
     }

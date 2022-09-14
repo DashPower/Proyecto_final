@@ -1,4 +1,4 @@
-.container1{
+/* .container1{
     
     display: grid;
     height: 100vh;
@@ -16,11 +16,9 @@
 
     grid-area: header;
 }
-
+ */
 
 .container1> .main {
-
-    grid-area: main;
     
     #contenido_principal {
         display: flex;
@@ -29,11 +27,10 @@
         width: 100%;
         justify-content: end;
         
-    
         #contenido1 {
             display: flex;
             margin-left: 20px;
-            gap:40px;
+            gap:10px;
             flex-direction: column;
             align-items: center;
             justify-content: center;
@@ -43,14 +40,19 @@
             color: white;
             background: linear-gradient(180deg, rgba(0, 0, 0, 0.733), transparent);
             text-align: center;
+
+            
             >h2{
-                font-size: 2.2em;
+                font-size: 2.3em;
                 font-weight: bold;
+                color: $colorbtn;
+                margin: 0px;
             }
             >h4{
-                font-size: 1.5em;
+                font-size: 1.2em;
             }
             >p{
+                color: white;
                 font-size: 0.9em;
                 font-weight: 400;
             }
@@ -59,6 +61,7 @@
                    height: 50px;
                    opacity: 0.75;
                    transition:1s;
+                   background-color:$colorbtn;
             }
             
             > button:hover{
@@ -67,42 +70,44 @@
             }
             
         }
-    .quienes_somos {
 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            transition:1s;
-            color: black;
-                
-        #quienes_somos__desc >p {
-                color: black;
-            }
-    }
-    #quienes_somos:hover{
-            background-color: $secondarycolor;   
-    }
-    #servicios {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    #contactanos_index {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    
-    }
-    
-
+}
+.servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color:#E6E6E6 ;
+}
+#contactanos_index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $secondarycolor;
 
 }
 
+.quienes_somos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $secondarycolor;
+    
+    
+    #quienes_somos__desc {
+        font-size: 1em;
+        color: white;
+        text-align: center;
+        padding: 20px 70px 0px 70px;
+        font-weight: 400;
+    }
+}
 
-.container1>.titulos{
+
+/* .container1>.titulos{
 
     grid-area: titulos;
 }
@@ -110,5 +115,5 @@
 .container1> footer {
 
     grid-area: footer;
-}
+} */
 }

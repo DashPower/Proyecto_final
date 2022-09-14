@@ -4,6 +4,7 @@ header{
 
     	position: absolute;
     	margin-inline: 5px;
+		margin-top:8px;
 	}
 
 	.menu {
@@ -12,7 +13,7 @@ header{
     	flex-direction: row;
     	justify-content: end;
     	background-color: $maincolor;
-    	height: 70px;
+    	height: 90px;
     	align-items: center;
     	gap: 5px;
     	list-style: none;
