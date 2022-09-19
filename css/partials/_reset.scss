@@ -54,4 +54,9 @@ body {
 .btncolor{
     background-color: $colorbtn;
     font-weight: bold;
+    
+    &:hover{
+        background-color: $colorbtn;
+    }
 }
+

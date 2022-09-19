@@ -16,7 +16,7 @@ height: 600px;
 background-color: #E6E6E6;
 }
 .carousel-item{
-  height: 600px;
+  margin-bottom: 20px;
 }
 .card {
     margin: 0 0.5em;
@@ -34,6 +34,7 @@ background-color: #E6E6E6;
     transform: translateY(-50%);
   }
   @media (min-width: 768px) {
+
     .carousel-item {
       margin-right: 0;
       flex: 0 0 33.333333%;

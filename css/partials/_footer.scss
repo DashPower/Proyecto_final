@@ -6,6 +6,7 @@ footer {
     background-color: $maincolor;
     font-size: 1em;
     
+    
     .red_social {
         display: flex;
         flex-direction: column;
@@ -24,8 +25,12 @@ footer {
         flex-direction: column;
         width: 40%;
         >h2 {
-            height: 20%;
-            color: black;
+            height: 100%;
+            color: white;
+            font-size: 1rem;
+            font-weight: 400;
+            text-align: center;
+            margin-top: 10px;
         }
         .info_contact {
         height: 80%;

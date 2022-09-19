@@ -1,26 +1,14 @@
 .container_contact{
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-        "header"
-        "contact_page"
-        "titulos"
-        "footer";
     
-    >.titulos{
-            grid-area: titulos;
+    h2{
+        margin-top: 20px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 2rem;
     }
-    >header{
-            grid-area: header;
-    }   
-    >#contact_page{
-        
-            grid-area: contact_page;
-    }  
-    >footer {
-            grid-area: footer;
+
+    button{
+        align-self: center;
     }
 
     #contact_page {
@@ -29,11 +17,11 @@
         flex-direction: row;
         height: 800px;
         padding: 20px;
-        margin: 5%;
+        margin: 0 5% 5% 5%;
         
         #contact_contenido {
-            background-image: url(../img/Contactanos.jpeg);
-            background-size: 1000px 800px;
+            background-image: url(./../../img/Contactanos.jpeg);
+            background-size: cover;
             background-repeat: no-repeat;
             width: 50%;
             flex-direction: row;
@@ -42,25 +30,36 @@
             display: flex;
             justify-content: start;
             padding: 20px;
-            background-color: rgba(0, 0, 255, 0.363);
         }
     }
     #form_contact {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
-        background-color:$secondarycolor;
+        background-color:$maincolor;
         width: 50%;
         flex-direction: column;
-        padding-left: 100px;
+        
         
         #texto_titulo {
-            color: black;
+            color: $colorbtn;
             padding-bottom: 25px;
             text-align: center;
             justify-content: center;
             width: 60%;
         }
+
+        form{
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-label{
+            color: white;
+        }
+            
     }
+    
 
 }

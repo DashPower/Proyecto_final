@@ -1,44 +1,31 @@
 header{
-
-	#inicio {
-
-    	position: absolute;
-    	margin-inline: 5px;
-		margin-top:8px;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	.navbar, .navbar-expand-lg{
+		background-color: $maincolor;
+		width: 100%;
 	}
 
-	.menu {
-    	display: flex;
-    	flex-wrap: wrap;
-    	flex-direction: row;
-    	justify-content: end;
-    	background-color: $maincolor;
-    	height: 90px;
-    	align-items: center;
-    	gap: 5px;
-    	list-style: none;
-            >h1 {
-				-webkit-animation:slide-top .5s cubic-bezier(.25,.46,.45,.94) both;
-				animation:slide-top .5s cubic-bezier(.25,.46,.45,.94) both;
-                font-size:1.3em;
-                margin-right: 20px;
-				
-            }
-		@for $item from 1 through 4 {
-			.menu_item#{$item} {
-				animation-delay: $item*0.5s;
-			}
-			
+	.nav-link{
+		color: white;
+		&:hover{
+			color: $colorbtn;
 		}
+	}
+
+	#navbarNav{
+		justify-content: end;
+		margin-right: 20px;
+		font-size: 1.3rem;
+		font-weight: 700;
+	}
+	.navbar-toggler, .collapsed{
+		background-color: $colortitulo;
 		
+		&:active{
+			background-color: $colorbtn;
+		}
 	}
-
-	.menuMobile{
-
-    	display: none;
-	}
-
 }
 
-
- @-webkit-keyframes slide-top{0%{-webkit-transform:translateY(0);transform:translateY(0)}100%{-webkit-transform:translateY(-100px);transform:translateY(-10px)}}@keyframes slide-top{0%{-webkit-transform:translateY(0);transform:translateY(0)}100%{-webkit-transform:translateY(10px);transform:translateY(10px)}}
