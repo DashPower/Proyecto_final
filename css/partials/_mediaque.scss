@@ -15,7 +15,7 @@ a:active {
     text-decoration: underline;
   }
 }
-}
+
 
 header{
 
@@ -26,7 +26,69 @@ header{
 
 }
 
-.main,.container_test,.container_quienes,.container_servicios{
+.main,.container_test,.container_quienes,.container_servicios,.container_contact{
+  
+
+  h2{
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+button{
+    align-self: center;
+}
+
+#contact_page {
+
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    padding: 20px;
+    margin: 0 5% 5% 5%;
+    
+    #contact_contenido {
+        background-image: url(./../../img/Contactanos.jpeg);
+        background-repeat: no-repeat;
+        width: 100%;
+        flex-direction: row;
+        height: 1800px;
+    }
+    #contact_img {
+        display: flex;
+        justify-content: start;
+        padding: 20px;
+    }
+}
+#form_contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:$maincolor;
+    width: 100%;
+    flex-direction: column;
+    
+    
+    #texto_titulo {
+        color: $colorbtn;
+        padding-bottom: 25px;
+        text-align: center;
+        justify-content: center;
+        width: 60%;
+    }
+
+    form{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-label{
+        color: white;
+    }
+        
+}
 
   #contenedores_servicios {
         
@@ -41,12 +103,6 @@ header{
         display: flex;
         flex-direction: column;
         background-color: $secondarycolor;
-
-        h2{
-
-          background-color: $secondarycolor;
-          color: $colorbtn;
-        }
         
         #imagen_servicios {
             display: flex;
@@ -59,12 +115,19 @@ header{
             height: 500px;
             margin-bottom: 20px;
 
-            .titulos_servicios{
+            
+        }
+        .titulos_servicios{
 
-                font-weight: bold;
-                color: $maincolor;
-                
-            }
+          font-weight: bold;
+          color: $colorbtn !important;
+          text-align: center;
+          font-size: 1.5em;
+          padding: 20px !important;
+          margin: 20px !important;
+          background-color: $secondarycolor;
+          border-radius: 5px;
+          
         }
         
         .texto_servicios {
@@ -76,6 +139,8 @@ header{
             font-weight: 400;
             font-size: 1em;
             line-height: 1.5em;
+            background-color: unset;
+            padding: 25px;
         }
         #imagen_servicios2 {
             display: flex;
@@ -291,16 +356,17 @@ header{
   padding-block:20px;
   }
   .btn_medio{
-  width: 100%;
+  width: 80%;
   }
 }
 
 footer{
   margin: 0px;
   font-size: 1em;
+  flex-direction: column;
   .red_social {
     flex-direction: row;
-    width: 50%;
+    width: 100%;
     >a{
       width:50%;
       >img{
@@ -309,13 +375,16 @@ footer{
      }
     >ul{
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
-      width: 50%;
+      width: 100%;
+      padding: 0px;
+      margin: 0px;
+      gap: 20px;
     }
   }
   .info_contact_container{
-    width: 50%;
+    width: 100%;
     text-align: center;
     >h2{
       margin-top: 20px;
@@ -324,9 +393,6 @@ footer{
     .info_contact{
       .footer_contacto{
         gap: 20px;
-        .correo{
-          display: none;
-        }
         >li{
           width: 100%;
         }
@@ -341,4 +407,6 @@ footer{
 h2{
   margin: 0px;
   padding: 0px;
+}
+
 }

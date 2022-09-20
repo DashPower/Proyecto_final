@@ -641,285 +641,338 @@ header .navbar-toggler:active, header .collapsed:active {
   * a:active {
     text-decoration: underline;
   }
-}
-header .nav-link {
-  margin-top: 10px;
-  text-align: center;
-}
-
-.main #contenedores_servicios, .container_test #contenedores_servicios, .container_quienes #contenedores_servicios, .container_servicios #contenedores_servicios {
-  display: flex;
-  padding: 0px;
-  flex-direction: column;
-  margin: 0px;
-}
-.main #contenedores_servicios .contenedor_servicios, .container_test #contenedores_servicios .contenedor_servicios, .container_quienes #contenedores_servicios .contenedor_servicios, .container_servicios #contenedores_servicios .contenedor_servicios {
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(19, 19, 141, 0.71);
-}
-.main #contenedores_servicios .contenedor_servicios h2, .container_test #contenedores_servicios .contenedor_servicios h2, .container_quienes #contenedores_servicios .contenedor_servicios h2, .container_servicios #contenedores_servicios .contenedor_servicios h2 {
-  background-color: rgba(19, 19, 141, 0.71);
-  color: rgb(255, 0, 255);
-}
-.main #contenedores_servicios .contenedor_servicios #imagen_servicios, .container_test #contenedores_servicios .contenedor_servicios #imagen_servicios, .container_quienes #contenedores_servicios .contenedor_servicios #imagen_servicios, .container_servicios #contenedores_servicios .contenedor_servicios #imagen_servicios {
-  display: flex;
-  flex-direction: row;
-  background-image: url(./../../img/Servicio-Tecnico.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  align-items: center;
-  justify-content: center;
-  height: 500px;
-  margin-bottom: 20px;
-}
-.main #contenedores_servicios .contenedor_servicios #imagen_servicios .titulos_servicios, .container_test #contenedores_servicios .contenedor_servicios #imagen_servicios .titulos_servicios, .container_quienes #contenedores_servicios .contenedor_servicios #imagen_servicios .titulos_servicios, .container_servicios #contenedores_servicios .contenedor_servicios #imagen_servicios .titulos_servicios {
-  font-weight: bold;
-  color: rgb(24, 13, 52);
-}
-.main #contenedores_servicios .contenedor_servicios .texto_servicios, .container_test #contenedores_servicios .contenedor_servicios .texto_servicios, .container_quienes #contenedores_servicios .contenedor_servicios .texto_servicios, .container_servicios #contenedores_servicios .contenedor_servicios .texto_servicios {
-  font-size: 1.3em;
-  color: #ffffff;
-  margin-bottom: 10px;
-  text-align: center;
-  justify-content: center;
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 1.5em;
-}
-.main #contenedores_servicios .contenedor_servicios #imagen_servicios2, .container_test #contenedores_servicios .contenedor_servicios #imagen_servicios2, .container_quienes #contenedores_servicios .contenedor_servicios #imagen_servicios2, .container_servicios #contenedores_servicios .contenedor_servicios #imagen_servicios2 {
-  display: flex;
-  flex-direction: row;
-  background-image: url(./../../img/Servicio-Tecnico2.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  align-items: center;
-  justify-content: center;
-  height: 800px;
-  margin-bottom: 20px;
-}
-.main #contenedores_servicios .contenedor_servicios #imagen_servicios3, .container_test #contenedores_servicios .contenedor_servicios #imagen_servicios3, .container_quienes #contenedores_servicios .contenedor_servicios #imagen_servicios3, .container_servicios #contenedores_servicios .contenedor_servicios #imagen_servicios3 {
-  display: flex;
-  flex-direction: row;
-  background-image: url(./../../img/Redess.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  align-items: center;
-  justify-content: center;
-  height: 500px;
-  margin-bottom: 20px;
-}
-.main #contenedores_servicios .contenedor_servicios #imagen_servicios4, .container_test #contenedores_servicios .contenedor_servicios #imagen_servicios4, .container_quienes #contenedores_servicios .contenedor_servicios #imagen_servicios4, .container_servicios #contenedores_servicios .contenedor_servicios #imagen_servicios4 {
-  display: flex;
-  flex-direction: row;
-  background-image: url(./../../img/redesseguridad.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  align-items: center;
-  justify-content: center;
-  height: 500px;
-  margin-bottom: 20px;
-}
-.main #contenedor_quienes_somos, .container_test #contenedor_quienes_somos, .container_quienes #contenedor_quienes_somos, .container_servicios #contenedor_quienes_somos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 10%;
-  background-color: #E6E6E6;
-}
-.main #contenedor_quienes_somos .contenedores_quienes_somos, .container_test #contenedor_quienes_somos .contenedores_quienes_somos, .container_quienes #contenedor_quienes_somos .contenedores_quienes_somos, .container_servicios #contenedor_quienes_somos .contenedores_quienes_somos {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.main #contenedor_quienes_somos .contenedores_quienes_somos > h2, .container_test #contenedor_quienes_somos .contenedores_quienes_somos > h2, .container_quienes #contenedor_quienes_somos .contenedores_quienes_somos > h2, .container_servicios #contenedor_quienes_somos .contenedores_quienes_somos > h2 {
-  text-align: center;
-  padding-block: 10px;
-}
-.main #contenedor_quienes_somos .contenedores_quienes_somos__img, .container_test #contenedor_quienes_somos .contenedores_quienes_somos__img, .container_quienes #contenedor_quienes_somos .contenedores_quienes_somos__img, .container_servicios #contenedor_quienes_somos .contenedores_quienes_somos__img {
-  width: 100%;
-  height: unset;
-  margin-bottom: 5%;
-}
-.main #contenedor_quienes_somos .texto_quienes_somos, .container_test #contenedor_quienes_somos .texto_quienes_somos, .container_quienes #contenedor_quienes_somos .texto_quienes_somos, .container_servicios #contenedor_quienes_somos .texto_quienes_somos {
-  margin-top: 10px;
-  text-align: center;
-  font-size: 1em;
-  color: black;
-  margin-bottom: 20px;
-  font-weight: 400;
-}
-.main #contenido_testimonios, .container_test #contenido_testimonios, .container_quienes #contenido_testimonios, .container_servicios #contenido_testimonios {
-  display: flex;
-  flex-direction: column;
-  background-image: url(../../img/smiling-businesspeople-shaking-hands-during-meeting-office.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  align-items: center;
-  justify-content: center;
-  height: 1000px;
-  margin-bottom: 20px;
-  width: 100%;
-  padding: 0px;
-  margin: 0px;
-}
-.main #contenido_testimonios #contenido_testimonio__principal, .container_test #contenido_testimonios #contenido_testimonio__principal, .container_quienes #contenido_testimonios #contenido_testimonio__principal, .container_servicios #contenido_testimonios #contenido_testimonio__principal {
-  display: flex;
-  background-color: rgba(24, 13, 52, 0.562);
-  color: white;
-  height: 1000px;
-}
-.main #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal, .container_test #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal, .container_quienes #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal, .container_servicios #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 20px;
-  padding: 20px;
-}
-.main #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h2, .main #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h4, .container_test #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h2, .container_test #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h4, .container_quienes #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h2, .container_quienes #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h4, .container_servicios #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h2, .container_servicios #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h4 {
-  font-weight: bold;
-  color: rgb(255, 0, 255);
-}
-.main #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h2, .container_test #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h2, .container_quienes #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h2, .container_servicios #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h2 {
-  font-size: 2em;
-}
-.main #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal #texto_contenido_principal, .container_test #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal #texto_contenido_principal, .container_quienes #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal #texto_contenido_principal, .container_servicios #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal #texto_contenido_principal {
-  width: 100%;
-  height: 100px;
-  text-align: center;
-  color: white;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.5em;
-}
-.main #contenido_principal, .container_test #contenido_principal, .container_quienes #contenido_principal, .container_servicios #contenido_principal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url(./../img/Fondo.jpg) center/cover no-repeat;
-  height: 550px;
-  width: 100%;
-}
-.main #contenido_principal #contenido1, .container_test #contenido_principal #contenido1, .container_quienes #contenido_principal #contenido1, .container_servicios #contenido_principal #contenido1 {
-  display: flex;
-  gap: 10px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2em;
-  width: 100%;
-  padding: 20px;
-  color: white;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.733), transparent);
-  text-align: center;
-}
-.main #contenido_principal #contenido1 > h2, .container_test #contenido_principal #contenido1 > h2, .container_quienes #contenido_principal #contenido1 > h2, .container_servicios #contenido_principal #contenido1 > h2 {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: rgb(255, 0, 255);
-  margin: 0px;
-}
-.main #contenido_principal #contenido1 > h4, .container_test #contenido_principal #contenido1 > h4, .container_quienes #contenido_principal #contenido1 > h4, .container_servicios #contenido_principal #contenido1 > h4 {
-  font-size: 1.1em;
-}
-.main #contenido_principal #contenido1 > p, .container_test #contenido_principal #contenido1 > p, .container_quienes #contenido_principal #contenido1 > p, .container_servicios #contenido_principal #contenido1 > p {
-  color: white;
-  font-size: 0.8em;
-  font-weight: 400;
-}
-.main #contenido_principal #contenido1 > button, .container_test #contenido_principal #contenido1 > button, .container_quienes #contenido_principal #contenido1 > button, .container_servicios #contenido_principal #contenido1 > button {
-  width: 50%;
-  height: 50px;
-  opacity: 0.75;
-  transition: 1s;
-  background-color: rgb(255, 0, 255);
-}
-.main #contenido_principal #contenido1 > button:hover, .container_test #contenido_principal #contenido1 > button:hover, .container_quienes #contenido_principal #contenido1 > button:hover, .container_servicios #contenido_principal #contenido1 > button:hover {
-  opacity: 1;
-  width: 100%;
-}
-.main #contenido_principal #contenido1 .testimonios, .container_test #contenido_principal #contenido1 .testimonios, .container_quienes #contenido_principal #contenido1 .testimonios, .container_servicios #contenido_principal #contenido1 .testimonios {
-  height: 100px;
-}
-.main .carousel-inner, .container_test .carousel-inner, .container_quienes .carousel-inner, .container_servicios .carousel-inner {
-  font-size: 1rem;
-}
-.main .testimonios, .container_test .testimonios, .container_quienes .testimonios, .container_servicios .testimonios {
-  padding: 50px 30px 50px 30px;
-  height: 650px;
-  background-color: #E6E6E6;
-}
-.main .quienes_somos, .container_test .quienes_somos, .container_quienes .quienes_somos, .container_servicios .quienes_somos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(19, 19, 141, 0.71);
-}
-.main .quienes_somos #quienes_somos__desc, .container_test .quienes_somos #quienes_somos__desc, .container_quienes .quienes_somos #quienes_somos__desc, .container_servicios .quienes_somos #quienes_somos__desc {
-  font-size: 1em;
-  color: white;
-  text-align: center;
-  padding: 20px 20px 0px 20px;
-  font-weight: 400;
-}
-.main #contactanos_index, .container_test #contactanos_index, .container_quienes #contactanos_index, .container_servicios #contactanos_index {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(19, 19, 141, 0.71);
-  padding-block: 20px;
-}
-.main .btn_medio, .container_test .btn_medio, .container_quienes .btn_medio, .container_servicios .btn_medio {
-  width: 100%;
-}
-
-footer {
-  margin: 0px;
-  font-size: 1em;
-}
-footer .red_social {
-  flex-direction: row;
-  width: 50%;
-}
-footer .red_social > a {
-  width: 50%;
-}
-footer .red_social > a > img {
-  height: 75px;
-}
-footer .red_social > ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50%;
-}
-footer .info_contact_container {
-  width: 50%;
-  text-align: center;
-}
-footer .info_contact_container > h2 {
-  margin-top: 20px;
-  font-size: 1rem;
-}
-footer .info_contact_container .info_contact .footer_contacto {
-  gap: 20px;
-}
-footer .info_contact_container .info_contact .footer_contacto .correo {
-  display: none;
-}
-footer .info_contact_container .info_contact .footer_contacto > li {
-  width: 100%;
-}
-footer .info_contact_container .info_contact .menu_footer {
-  display: none;
-}
-
-h2 {
-  margin: 0px;
-  padding: 0px;
+  header .nav-link {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .main h2, .container_test h2, .container_quienes h2, .container_servicios h2, .container_contact h2 {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  .main button, .container_test button, .container_quienes button, .container_servicios button, .container_contact button {
+    align-self: center;
+  }
+  .main #contact_page, .container_test #contact_page, .container_quienes #contact_page, .container_servicios #contact_page, .container_contact #contact_page {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    padding: 20px;
+    margin: 0 5% 5% 5%;
+  }
+  .main #contact_page #contact_contenido, .container_test #contact_page #contact_contenido, .container_quienes #contact_page #contact_contenido, .container_servicios #contact_page #contact_contenido, .container_contact #contact_page #contact_contenido {
+    background-image: url(./../../img/Contactanos.jpeg);
+    background-repeat: no-repeat;
+    width: 100%;
+    flex-direction: row;
+    height: 1800px;
+  }
+  .main #contact_page #contact_img, .container_test #contact_page #contact_img, .container_quienes #contact_page #contact_img, .container_servicios #contact_page #contact_img, .container_contact #contact_page #contact_img {
+    display: flex;
+    justify-content: start;
+    padding: 20px;
+  }
+  .main #form_contact, .container_test #form_contact, .container_quienes #form_contact, .container_servicios #form_contact, .container_contact #form_contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(24, 13, 52);
+    width: 100%;
+    flex-direction: column;
+  }
+  .main #form_contact #texto_titulo, .container_test #form_contact #texto_titulo, .container_quienes #form_contact #texto_titulo, .container_servicios #form_contact #texto_titulo, .container_contact #form_contact #texto_titulo {
+    color: rgb(255, 0, 255);
+    padding-bottom: 25px;
+    text-align: center;
+    justify-content: center;
+    width: 60%;
+  }
+  .main #form_contact form, .container_test #form_contact form, .container_quienes #form_contact form, .container_servicios #form_contact form, .container_contact #form_contact form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  .main #form_contact .form-label, .container_test #form_contact .form-label, .container_quienes #form_contact .form-label, .container_servicios #form_contact .form-label, .container_contact #form_contact .form-label {
+    color: white;
+  }
+  .main #contenedores_servicios, .container_test #contenedores_servicios, .container_quienes #contenedores_servicios, .container_servicios #contenedores_servicios, .container_contact #contenedores_servicios {
+    display: flex;
+    padding: 0px;
+    flex-direction: column;
+    margin: 0px;
+  }
+  .main #contenedores_servicios .contenedor_servicios, .container_test #contenedores_servicios .contenedor_servicios, .container_quienes #contenedores_servicios .contenedor_servicios, .container_servicios #contenedores_servicios .contenedor_servicios, .container_contact #contenedores_servicios .contenedor_servicios {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(19, 19, 141, 0.71);
+  }
+  .main #contenedores_servicios .contenedor_servicios #imagen_servicios, .container_test #contenedores_servicios .contenedor_servicios #imagen_servicios, .container_quienes #contenedores_servicios .contenedor_servicios #imagen_servicios, .container_servicios #contenedores_servicios .contenedor_servicios #imagen_servicios, .container_contact #contenedores_servicios .contenedor_servicios #imagen_servicios {
+    display: flex;
+    flex-direction: row;
+    background-image: url(./../../img/Servicio-Tecnico.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    margin-bottom: 20px;
+  }
+  .main #contenedores_servicios .contenedor_servicios .titulos_servicios, .container_test #contenedores_servicios .contenedor_servicios .titulos_servicios, .container_quienes #contenedores_servicios .contenedor_servicios .titulos_servicios, .container_servicios #contenedores_servicios .contenedor_servicios .titulos_servicios, .container_contact #contenedores_servicios .contenedor_servicios .titulos_servicios {
+    font-weight: bold;
+    color: rgb(255, 0, 255) !important;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 20px !important;
+    margin: 20px !important;
+    background-color: rgba(19, 19, 141, 0.71);
+    border-radius: 5px;
+  }
+  .main #contenedores_servicios .contenedor_servicios .texto_servicios, .container_test #contenedores_servicios .contenedor_servicios .texto_servicios, .container_quienes #contenedores_servicios .contenedor_servicios .texto_servicios, .container_servicios #contenedores_servicios .contenedor_servicios .texto_servicios, .container_contact #contenedores_servicios .contenedor_servicios .texto_servicios {
+    font-size: 1.3em;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.5em;
+    background-color: unset;
+    padding: 25px;
+  }
+  .main #contenedores_servicios .contenedor_servicios #imagen_servicios2, .container_test #contenedores_servicios .contenedor_servicios #imagen_servicios2, .container_quienes #contenedores_servicios .contenedor_servicios #imagen_servicios2, .container_servicios #contenedores_servicios .contenedor_servicios #imagen_servicios2, .container_contact #contenedores_servicios .contenedor_servicios #imagen_servicios2 {
+    display: flex;
+    flex-direction: row;
+    background-image: url(./../../img/Servicio-Tecnico2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+    margin-bottom: 20px;
+  }
+  .main #contenedores_servicios .contenedor_servicios #imagen_servicios3, .container_test #contenedores_servicios .contenedor_servicios #imagen_servicios3, .container_quienes #contenedores_servicios .contenedor_servicios #imagen_servicios3, .container_servicios #contenedores_servicios .contenedor_servicios #imagen_servicios3, .container_contact #contenedores_servicios .contenedor_servicios #imagen_servicios3 {
+    display: flex;
+    flex-direction: row;
+    background-image: url(./../../img/Redess.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    margin-bottom: 20px;
+  }
+  .main #contenedores_servicios .contenedor_servicios #imagen_servicios4, .container_test #contenedores_servicios .contenedor_servicios #imagen_servicios4, .container_quienes #contenedores_servicios .contenedor_servicios #imagen_servicios4, .container_servicios #contenedores_servicios .contenedor_servicios #imagen_servicios4, .container_contact #contenedores_servicios .contenedor_servicios #imagen_servicios4 {
+    display: flex;
+    flex-direction: row;
+    background-image: url(./../../img/redesseguridad.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    margin-bottom: 20px;
+  }
+  .main #contenedor_quienes_somos, .container_test #contenedor_quienes_somos, .container_quienes #contenedor_quienes_somos, .container_servicios #contenedor_quienes_somos, .container_contact #contenedor_quienes_somos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+    background-color: #E6E6E6;
+  }
+  .main #contenedor_quienes_somos .contenedores_quienes_somos, .container_test #contenedor_quienes_somos .contenedores_quienes_somos, .container_quienes #contenedor_quienes_somos .contenedores_quienes_somos, .container_servicios #contenedor_quienes_somos .contenedores_quienes_somos, .container_contact #contenedor_quienes_somos .contenedores_quienes_somos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .main #contenedor_quienes_somos .contenedores_quienes_somos > h2, .container_test #contenedor_quienes_somos .contenedores_quienes_somos > h2, .container_quienes #contenedor_quienes_somos .contenedores_quienes_somos > h2, .container_servicios #contenedor_quienes_somos .contenedores_quienes_somos > h2, .container_contact #contenedor_quienes_somos .contenedores_quienes_somos > h2 {
+    text-align: center;
+    padding-block: 10px;
+  }
+  .main #contenedor_quienes_somos .contenedores_quienes_somos__img, .container_test #contenedor_quienes_somos .contenedores_quienes_somos__img, .container_quienes #contenedor_quienes_somos .contenedores_quienes_somos__img, .container_servicios #contenedor_quienes_somos .contenedores_quienes_somos__img, .container_contact #contenedor_quienes_somos .contenedores_quienes_somos__img {
+    width: 100%;
+    height: unset;
+    margin-bottom: 5%;
+  }
+  .main #contenedor_quienes_somos .texto_quienes_somos, .container_test #contenedor_quienes_somos .texto_quienes_somos, .container_quienes #contenedor_quienes_somos .texto_quienes_somos, .container_servicios #contenedor_quienes_somos .texto_quienes_somos, .container_contact #contenedor_quienes_somos .texto_quienes_somos {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1em;
+    color: black;
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
+  .main #contenido_testimonios, .container_test #contenido_testimonios, .container_quienes #contenido_testimonios, .container_servicios #contenido_testimonios, .container_contact #contenido_testimonios {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../../img/smiling-businesspeople-shaking-hands-during-meeting-office.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    height: 1000px;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+  .main #contenido_testimonios #contenido_testimonio__principal, .container_test #contenido_testimonios #contenido_testimonio__principal, .container_quienes #contenido_testimonios #contenido_testimonio__principal, .container_servicios #contenido_testimonios #contenido_testimonio__principal, .container_contact #contenido_testimonios #contenido_testimonio__principal {
+    display: flex;
+    background-color: rgba(24, 13, 52, 0.562);
+    color: white;
+    height: 1000px;
+  }
+  .main #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal, .container_test #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal, .container_quienes #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal, .container_servicios #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal, .container_contact #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  .main #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h2, .main #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h4, .container_test #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h2, .container_test #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h4, .container_quienes #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h2, .container_quienes #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h4, .container_servicios #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h2, .container_servicios #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h4, .container_contact #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h2, .container_contact #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h4 {
+    font-weight: bold;
+    color: rgb(255, 0, 255);
+  }
+  .main #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h2, .container_test #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h2, .container_quienes #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h2, .container_servicios #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h2, .container_contact #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h2 {
+    font-size: 2em;
+  }
+  .main #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal #texto_contenido_principal, .container_test #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal #texto_contenido_principal, .container_quienes #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal #texto_contenido_principal, .container_servicios #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal #texto_contenido_principal, .container_contact #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal #texto_contenido_principal {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5em;
+  }
+  .main #contenido_principal, .container_test #contenido_principal, .container_quienes #contenido_principal, .container_servicios #contenido_principal, .container_contact #contenido_principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./../img/Fondo.jpg) center/cover no-repeat;
+    height: 550px;
+    width: 100%;
+  }
+  .main #contenido_principal #contenido1, .container_test #contenido_principal #contenido1, .container_quienes #contenido_principal #contenido1, .container_servicios #contenido_principal #contenido1, .container_contact #contenido_principal #contenido1 {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.733), transparent);
+    text-align: center;
+  }
+  .main #contenido_principal #contenido1 > h2, .container_test #contenido_principal #contenido1 > h2, .container_quienes #contenido_principal #contenido1 > h2, .container_servicios #contenido_principal #contenido1 > h2, .container_contact #contenido_principal #contenido1 > h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(255, 0, 255);
+    margin: 0px;
+  }
+  .main #contenido_principal #contenido1 > h4, .container_test #contenido_principal #contenido1 > h4, .container_quienes #contenido_principal #contenido1 > h4, .container_servicios #contenido_principal #contenido1 > h4, .container_contact #contenido_principal #contenido1 > h4 {
+    font-size: 1.1em;
+  }
+  .main #contenido_principal #contenido1 > p, .container_test #contenido_principal #contenido1 > p, .container_quienes #contenido_principal #contenido1 > p, .container_servicios #contenido_principal #contenido1 > p, .container_contact #contenido_principal #contenido1 > p {
+    color: white;
+    font-size: 0.8em;
+    font-weight: 400;
+  }
+  .main #contenido_principal #contenido1 > button, .container_test #contenido_principal #contenido1 > button, .container_quienes #contenido_principal #contenido1 > button, .container_servicios #contenido_principal #contenido1 > button, .container_contact #contenido_principal #contenido1 > button {
+    width: 50%;
+    height: 50px;
+    opacity: 0.75;
+    transition: 1s;
+    background-color: rgb(255, 0, 255);
+  }
+  .main #contenido_principal #contenido1 > button:hover, .container_test #contenido_principal #contenido1 > button:hover, .container_quienes #contenido_principal #contenido1 > button:hover, .container_servicios #contenido_principal #contenido1 > button:hover, .container_contact #contenido_principal #contenido1 > button:hover {
+    opacity: 1;
+    width: 100%;
+  }
+  .main #contenido_principal #contenido1 .testimonios, .container_test #contenido_principal #contenido1 .testimonios, .container_quienes #contenido_principal #contenido1 .testimonios, .container_servicios #contenido_principal #contenido1 .testimonios, .container_contact #contenido_principal #contenido1 .testimonios {
+    height: 100px;
+  }
+  .main .carousel-inner, .container_test .carousel-inner, .container_quienes .carousel-inner, .container_servicios .carousel-inner, .container_contact .carousel-inner {
+    font-size: 1rem;
+  }
+  .main .testimonios, .container_test .testimonios, .container_quienes .testimonios, .container_servicios .testimonios, .container_contact .testimonios {
+    padding: 50px 30px 50px 30px;
+    height: 650px;
+    background-color: #E6E6E6;
+  }
+  .main .quienes_somos, .container_test .quienes_somos, .container_quienes .quienes_somos, .container_servicios .quienes_somos, .container_contact .quienes_somos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(19, 19, 141, 0.71);
+  }
+  .main .quienes_somos #quienes_somos__desc, .container_test .quienes_somos #quienes_somos__desc, .container_quienes .quienes_somos #quienes_somos__desc, .container_servicios .quienes_somos #quienes_somos__desc, .container_contact .quienes_somos #quienes_somos__desc {
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    padding: 20px 20px 0px 20px;
+    font-weight: 400;
+  }
+  .main #contactanos_index, .container_test #contactanos_index, .container_quienes #contactanos_index, .container_servicios #contactanos_index, .container_contact #contactanos_index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(19, 19, 141, 0.71);
+    padding-block: 20px;
+  }
+  .main .btn_medio, .container_test .btn_medio, .container_quienes .btn_medio, .container_servicios .btn_medio, .container_contact .btn_medio {
+    width: 80%;
+  }
+  footer {
+    margin: 0px;
+    font-size: 1em;
+    flex-direction: column;
+  }
+  footer .red_social {
+    flex-direction: row;
+    width: 100%;
+  }
+  footer .red_social > a {
+    width: 50%;
+  }
+  footer .red_social > a > img {
+    height: 75px;
+  }
+  footer .red_social > ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    gap: 20px;
+  }
+  footer .info_contact_container {
+    width: 100%;
+    text-align: center;
+  }
+  footer .info_contact_container > h2 {
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+  footer .info_contact_container .info_contact .footer_contacto {
+    gap: 20px;
+  }
+  footer .info_contact_container .info_contact .footer_contacto > li {
+    width: 100%;
+  }
+  footer .info_contact_container .info_contact .menu_footer {
+    display: none;
+  }
+  h2 {
+    margin: 0px;
+    padding: 0px;
+  }
 }/*# sourceMappingURL=stylex.css.map */
