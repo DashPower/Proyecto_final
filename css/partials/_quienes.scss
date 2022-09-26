@@ -26,7 +26,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 10%;
         background-color: #E6E6E6;
         
         .contenedores_quienes_somos {
@@ -38,20 +37,20 @@
             
             >h2 {
                 height: 50px;
+                text-align: center;
+                padding-block: 20px;
             }
-        
         }
         .contenedores_quienes_somos__img {
             width: 100%;
-            height: 800px;
-            margin-bottom: 5%;
         }
-        
         .texto_quienes_somos {
-            font-size: 1em;
-            color: black;
-            margin-bottom: 20px;
+            padding: 20px;
+            font-size: 1.2em;
+            color: rgba(0, 0, 0, 0.856);
+            margin-bottom: 5px;
             font-weight: 400;
+            text-align: center;
         }    
         
     }

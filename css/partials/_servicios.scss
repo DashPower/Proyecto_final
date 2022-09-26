@@ -27,15 +27,21 @@
     #contenedores_servicios {
         
         display: flex;
-        padding: 20px;
         flex-direction: column;
-        margin: 5%;
 
         .contenedor_servicios {
             display: flex;
             flex-direction: column;
             background-color: #E6E6E6;
+            .color1{
+                background-color: $maincolor;
+            }
             
+            h2{
+
+                color: $colorbtn;
+            }
+
             #imagen_servicios {
                 display: flex;
                 flex-direction: row;
@@ -46,23 +52,17 @@
                 justify-content: center;
                 height: 500px;
                 margin-bottom: 20px;
-
-                .titulos_servicios{
-
-                    font-weight: bold;
-                    color: $maincolor;
-                    background-color: $secondarycolor;
-                }
+                
+               
             }
             
             .texto_servicios {
                 font-size: 1.3em;
-                color: #ffffff;
-                margin-bottom: 10px;
+                color: black;
+                margin-bottom: 30px;
                 text-align: center;
-                justify-content: center;
-                background-color: $secondarycolor;
                 font-weight: 400;
+                padding-inline: 20px;
             }
             #imagen_servicios2 {
                 display: flex;
