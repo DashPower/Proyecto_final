@@ -44,15 +44,15 @@
 
             #imagen_servicios {
                 display: flex;
-                flex-direction: row;
+                
                 background-image: url(./../../img/Servicio-Tecnico.jpg);
                 background-size: cover;
                 background-repeat: no-repeat;
                 align-items: center;
                 justify-content: center;
-                height: 500px;
+                height: 550px;
                 margin-bottom: 20px;
-                
+                object-fit: cover;
                
             }
             
@@ -72,8 +72,9 @@
                 background-repeat: no-repeat;
                 align-items: center;
                 justify-content: center;
-                height: 800px;
+                height: 550px;
                 margin-bottom: 20px;
+                object-fit: cover;
             }
             
             #imagen_servicios3 {
@@ -84,8 +85,9 @@
                 background-repeat: no-repeat;
                 align-items: center;
                 justify-content: center;
-                height: 500px;
+                height: 550px;
                 margin-bottom: 20px;
+                object-fit: cover;
             }
             
             #imagen_servicios4 {
@@ -96,8 +98,9 @@
                 background-repeat: no-repeat;
                 align-items: center;
                 justify-content: center;
-                height: 500px;
+                height: 550px;
                 margin-bottom: 20px;
+                object-fit: cover;
             }
             
         }

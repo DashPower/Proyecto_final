@@ -17,6 +17,7 @@ footer {
         >ul {
             display: flex;
             flex-direction: row;
+            padding-right: 30px;
         }
     }
     
@@ -36,6 +37,7 @@ footer {
         height: 80%;
         display: flex;
         flex-direction: column;
+        font-size: 0.9em;
             >ul:nth-child(1) {
                 height: 80%;
             }
@@ -53,8 +55,10 @@ footer {
         .menu_footer {
             display: flex;
             flex-direction: row;
-            gap: 40px;
+            gap: 20px;
             color: black;
+            font-size: 0.9em;
+
             
             li{
                 transition:1s;
@@ -63,7 +67,7 @@ footer {
                 transform:scale(1.2);
             }
             a {
-                color: rgb(47, 169, 151);
+                color: $colorbtn;
             }
         }
     
@@ -71,26 +75,10 @@ footer {
     
     
 }
-
-$redes: (
-
-    facebook: rgba(128, 128, 128, 0.425),
-    instagram: rgba(128, 128, 128, 0.432),
-    whatsapp: rgba(128, 128, 128, 0.527)
-
-);
-
-@each $redsocial, $colordered in $redes {
-    .fa-#{$redsocial} {
-        background-color: $colordered;
-    }
-}
-
 .fa-facebook{
-   
-    border-radius: 5px;
+    
     &:hover{
-        opacity: 0.65;
+        filter: invert(22%) sepia(81%) saturate(6420%) hue-rotate(296deg) brightness(117%) contrast(122%);
     }
 }
 

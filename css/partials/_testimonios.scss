@@ -38,15 +38,16 @@
             background-repeat: no-repeat;
             align-items: center;
             justify-content: center;
-            height: 800px;
+            height: 550px;
             margin-bottom: 20px;
+            object-fit: cover;
            
                         
             #contenido_testimonio__principal {
                 display: flex;
                 background-color:rgba(24, 13, 52, 0.712);
                 color: white;
-                height: 800px;
+                height: 550px;
                 
                 
                 #contenido_test__principal {
@@ -75,6 +76,7 @@
                         font-weight: 400;
                         padding-inline: 100px;
                         font-size: 1.2em;
+                        line-height: 1.5em;
                     }
                 }
             }

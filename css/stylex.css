@@ -20,7 +20,7 @@ ul {
 .titulos {
   background-color: rgb(24, 13, 52);
   width: 100%;
-  font-size: 1.5em;
+  font-size: 1.3em;
   text-align: center;
   justify-content: center;
   font-weight: 700;
@@ -74,6 +74,7 @@ footer .red_social {
 footer .red_social > ul {
   display: flex;
   flex-direction: row;
+  padding-right: 30px;
 }
 footer .info_contact_container {
   display: flex;
@@ -92,6 +93,7 @@ footer .info_contact_container .info_contact {
   height: 80%;
   display: flex;
   flex-direction: column;
+  font-size: 0.9em;
 }
 footer .info_contact_container .info_contact > ul:nth-child(1) {
   height: 80%;
@@ -107,8 +109,9 @@ footer .info_contact_container .info_contact .footer_contacto {
 footer .info_contact_container .menu_footer {
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  gap: 20px;
   color: black;
+  font-size: 0.9em;
 }
 footer .info_contact_container .menu_footer li {
   transition: 1s;
@@ -117,26 +120,11 @@ footer .info_contact_container .menu_footer li:hover {
   transform: scale(1.2);
 }
 footer .info_contact_container .menu_footer a {
-  color: rgb(47, 169, 151);
+  color: rgb(255, 0, 255);
 }
 
-.fa-facebook, .fa-instagram, .fa-whatsapp {
-  background-color: rgba(128, 128, 128, 0.425);
-}
-
-.fa-instagram {
-  background-color: rgba(128, 128, 128, 0.432);
-}
-
-.fa-whatsapp {
-  background-color: rgba(128, 128, 128, 0.527);
-}
-
-.fa-facebook, .fa-instagram, .fa-whatsapp {
-  border-radius: 5px;
-}
 .fa-facebook:hover, .fa-instagram:hover, .fa-whatsapp:hover {
-  opacity: 0.65;
+  filter: invert(22%) sepia(81%) saturate(6420%) hue-rotate(296deg) brightness(117%) contrast(122%);
 }
 
 header {
@@ -212,6 +200,7 @@ header .navbar-toggler:active, header .collapsed:active {
     align-items: center;
     justify-content: center;
     font-size: 1.2em;
+    line-height: 1.2em;
     width: 40%;
     padding: 20px;
     color: white;
@@ -252,6 +241,10 @@ header .navbar-toggler:active, header .collapsed:active {
   padding: 20px;
   background-color: #E6E6E6;
 }
+.container1 > .main .servicios img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .container1 > .main #contactanos_index {
   display: flex;
   flex-direction: column;
@@ -272,6 +265,7 @@ header .navbar-toggler:active, header .collapsed:active {
     color: white;
     text-align: center;
     padding: 20px 70px 0px 70px;
+    line-height: 1.5em;
     font-weight: 400;
   }
 }
@@ -284,6 +278,7 @@ header .navbar-toggler:active, header .collapsed:active {
 .card-text {
   font-weight: 400;
   height: 150px;
+  line-height: 1.5em;
 }
 
 .testimonios {
@@ -410,14 +405,16 @@ header .navbar-toggler:active, header .collapsed:active {
   background-repeat: no-repeat;
   align-items: center;
   justify-content: center;
-  height: 800px;
+  height: 550px;
   margin-bottom: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .container_test #contenido_testimonios #contenido_testimonio__principal {
   display: flex;
   background-color: rgba(24, 13, 52, 0.712);
   color: white;
-  height: 800px;
+  height: 550px;
 }
 .container_test #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal {
   display: flex;
@@ -443,6 +440,7 @@ header .navbar-toggler:active, header .collapsed:active {
   font-weight: 400;
   padding-inline: 100px;
   font-size: 1.2em;
+  line-height: 1.5em;
 }
 .container_test #cartas_testimonios {
   padding: 20px;
@@ -485,14 +483,15 @@ header .navbar-toggler:active, header .collapsed:active {
 }
 .container_servicios #contenedores_servicios .contenedor_servicios #imagen_servicios {
   display: flex;
-  flex-direction: row;
   background-image: url(./../../img/Servicio-Tecnico.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   align-items: center;
   justify-content: center;
-  height: 500px;
+  height: 550px;
   margin-bottom: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .container_servicios #contenedores_servicios .contenedor_servicios .texto_servicios {
   font-size: 1.3em;
@@ -510,8 +509,10 @@ header .navbar-toggler:active, header .collapsed:active {
   background-repeat: no-repeat;
   align-items: center;
   justify-content: center;
-  height: 800px;
+  height: 550px;
   margin-bottom: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .container_servicios #contenedores_servicios .contenedor_servicios #imagen_servicios3 {
   display: flex;
@@ -521,8 +522,10 @@ header .navbar-toggler:active, header .collapsed:active {
   background-repeat: no-repeat;
   align-items: center;
   justify-content: center;
-  height: 500px;
+  height: 550px;
   margin-bottom: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .container_servicios #contenedores_servicios .contenedor_servicios #imagen_servicios4 {
   display: flex;
@@ -532,8 +535,10 @@ header .navbar-toggler:active, header .collapsed:active {
   background-repeat: no-repeat;
   align-items: center;
   justify-content: center;
-  height: 500px;
+  height: 550px;
   margin-bottom: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .container_quienes {
@@ -564,25 +569,61 @@ header .navbar-toggler:active, header .collapsed:active {
 }
 .container_quienes #contenedor_quienes_somos .contenedores_quienes_somos {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+}
+.container_quienes #contenedor_quienes_somos .contenedores_quienes_somos .division1 {
+  display: flex;
   flex-direction: column;
+  margin-top: 20px;
 }
 .container_quienes #contenedor_quienes_somos .contenedores_quienes_somos > h2 {
-  height: 50px;
-  text-align: center;
+  height: 100px;
+  width: 100%;
   padding-block: 20px;
 }
 .container_quienes #contenedor_quienes_somos .contenedores_quienes_somos__img {
   width: 100%;
+  height: 550px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .container_quienes #contenedor_quienes_somos .texto_quienes_somos {
-  padding: 20px;
+  padding: 20px 40px 20px 40px;
   font-size: 1.2em;
-  color: rgba(0, 0, 0, 0.856);
+  color: black;
   margin-bottom: 5px;
   font-weight: 400;
   text-align: center;
+}
+.container_quienes #contenedor_quienes_somos .contenedores_quienes_somos1 {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-block: 100px;
+}
+.container_quienes #contenedor_quienes_somos .contenedores_quienes_somos1 .division1 {
+  display: flex;
+  flex-direction: column;
+}
+.container_quienes #contenedor_quienes_somos .contenedores_quienes_somos1 > h2 {
+  height: 100px;
+  width: 100%;
+  padding-block: 20px;
+}
+.container_quienes #contenedor_quienes_somos .contenedores_quienes_somos__img {
+  width: 100%;
+  height: 550px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0em 0em 1em 1em;
+}
+.container_quienes #contenedor_quienes_somos .texto_quienes_somos {
+  width: 100%;
+  padding: 20px 20px 20px 40px;
+  font-size: 1.1em;
+  line-height: 1.5em;
+  color: black;
+  font-weight: 400;
+  text-align: start;
 }
 
 .container_contact h2 {
