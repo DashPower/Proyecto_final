@@ -221,7 +221,7 @@ button{
   #contenido_testimonios {
     display: flex;
     flex-direction: column;
-    background-image: url(../../img/smiling-businesspeople-shaking-hands-during-meeting-office.jpg);
+    background-image: url(./../../img/Negocios.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     align-items: center;
@@ -235,7 +235,7 @@ button{
                 
     #contenido_testimonio__principal {
         display: flex;
-        background-color: rgba(24, 13, 52, 0.562);;
+        background-color: rgba(24, 13, 52, 0.562);
         color: white;
         height: 1000px;
         
@@ -352,7 +352,7 @@ button{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: $secondarycolor;
+  background-color: #E6E6E6 !important;
   padding-block:20px;
   }
   .btn_medio{
@@ -371,6 +371,7 @@ footer{
       width:50%;
       >img{
         height: 75px;
+        object-fit: contain;
       }
      }
     >ul{

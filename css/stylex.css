@@ -270,6 +270,11 @@ header .navbar-toggler:active, header .collapsed:active {
   }
 }
 
+.w-100 {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .card-title {
   font-weight: bold;
   color: rgba(192, 8, 192, 0.753);
@@ -400,7 +405,7 @@ header .navbar-toggler:active, header .collapsed:active {
 .container_test #contenido_testimonios {
   display: flex;
   flex-direction: column;
-  background-image: url(../../img/smiling-businesspeople-shaking-hands-during-meeting-office.jpg);
+  background-image: url(./../../img/Negocios.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   align-items: center;
@@ -857,7 +862,7 @@ header .navbar-toggler:active, header .collapsed:active {
   .main #contenido_testimonios, .container_test #contenido_testimonios, .container_quienes #contenido_testimonios, .container_servicios #contenido_testimonios, .container_contact #contenido_testimonios {
     display: flex;
     flex-direction: column;
-    background-image: url(../../img/smiling-businesspeople-shaking-hands-during-meeting-office.jpg);
+    background-image: url(./../../img/Negocios.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     align-items: center;
@@ -974,7 +979,7 @@ header .navbar-toggler:active, header .collapsed:active {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(19, 19, 141, 0.71);
+    background-color: #E6E6E6 !important;
     padding-block: 20px;
   }
   .main .btn_medio, .container_test .btn_medio, .container_quienes .btn_medio, .container_servicios .btn_medio, .container_contact .btn_medio {
@@ -994,6 +999,8 @@ header .navbar-toggler:active, header .collapsed:active {
   }
   footer .red_social > a > img {
     height: 75px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   footer .red_social > ul {
     display: flex;
