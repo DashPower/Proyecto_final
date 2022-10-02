@@ -27,19 +27,15 @@ header{
 }
 
 .main,.container_test,.container_quienes,.container_servicios,.container_contact{
-  
-
   h2{
     margin-top: 20px;
     text-align: center;
     font-weight: 700;
     font-size: 2rem;
 }
-
 button{
     align-self: center;
 }
-
 #contact_page {
 
     display: flex;
@@ -89,7 +85,6 @@ button{
     }
         
 }
-
   #contenedores_servicios {
         
     display: flex;
@@ -186,10 +181,10 @@ button{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10%;
+    padding-top: 20px;
     background-color: #E6E6E6;
     
-    .contenedores_quienes_somos {
+    .contenedores_quienes_somos{
 
         display: flex;
         align-items: center;
@@ -202,20 +197,33 @@ button{
         }
     
     }
-    .contenedores_quienes_somos__img {
+    .contenedores_quienes_somos1{
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      
+      >h2 {
+          text-align: center;
+          padding-block:10px;
+      }
+  
+  }
+    .contenedores_quienes_somos__img{
         width: 100%;
         height: unset;
-        margin-bottom: 5%;
+        margin-bottom: 10px;
     }
-    
-    .texto_quienes_somos {
+    .texto_quienes_somos{
         margin-top: 10px;
         text-align: center;
         font-size: 1em;
         color: black;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         font-weight: 400;
     }    
+    
     
 }
   #contenido_testimonios {
@@ -258,13 +266,18 @@ button{
               font-size: 2em;
             }
 
+            h3{
+              font-size: 1.3em !important;
+            }
+
             #texto_contenido_principal {
               width: 100%;
               height: 100px;
+              padding-inline: 20px;
               text-align: center;
               color: white;
               font-weight: 400;
-              font-size: 1rem;
+              font-size: 1.2rem;
               line-height: 1.5em;
             }
         }
@@ -359,7 +372,6 @@ button{
   width: 80%;
   }
 }
-
 footer{
   margin: 0px;
   font-size: 1em;

@@ -833,7 +833,7 @@ header .navbar-toggler:active, header .collapsed:active {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10%;
+    padding-top: 20px;
     background-color: #E6E6E6;
   }
   .main #contenedor_quienes_somos .contenedores_quienes_somos, .container_test #contenedor_quienes_somos .contenedores_quienes_somos, .container_quienes #contenedor_quienes_somos .contenedores_quienes_somos, .container_servicios #contenedor_quienes_somos .contenedores_quienes_somos, .container_contact #contenedor_quienes_somos .contenedores_quienes_somos {
@@ -846,17 +846,27 @@ header .navbar-toggler:active, header .collapsed:active {
     text-align: center;
     padding-block: 10px;
   }
+  .main #contenedor_quienes_somos .contenedores_quienes_somos1, .container_test #contenedor_quienes_somos .contenedores_quienes_somos1, .container_quienes #contenedor_quienes_somos .contenedores_quienes_somos1, .container_servicios #contenedor_quienes_somos .contenedores_quienes_somos1, .container_contact #contenedor_quienes_somos .contenedores_quienes_somos1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .main #contenedor_quienes_somos .contenedores_quienes_somos1 > h2, .container_test #contenedor_quienes_somos .contenedores_quienes_somos1 > h2, .container_quienes #contenedor_quienes_somos .contenedores_quienes_somos1 > h2, .container_servicios #contenedor_quienes_somos .contenedores_quienes_somos1 > h2, .container_contact #contenedor_quienes_somos .contenedores_quienes_somos1 > h2 {
+    text-align: center;
+    padding-block: 10px;
+  }
   .main #contenedor_quienes_somos .contenedores_quienes_somos__img, .container_test #contenedor_quienes_somos .contenedores_quienes_somos__img, .container_quienes #contenedor_quienes_somos .contenedores_quienes_somos__img, .container_servicios #contenedor_quienes_somos .contenedores_quienes_somos__img, .container_contact #contenedor_quienes_somos .contenedores_quienes_somos__img {
     width: 100%;
     height: unset;
-    margin-bottom: 5%;
+    margin-bottom: 10px;
   }
   .main #contenedor_quienes_somos .texto_quienes_somos, .container_test #contenedor_quienes_somos .texto_quienes_somos, .container_quienes #contenedor_quienes_somos .texto_quienes_somos, .container_servicios #contenedor_quienes_somos .texto_quienes_somos, .container_contact #contenedor_quienes_somos .texto_quienes_somos {
     margin-top: 10px;
     text-align: center;
     font-size: 1em;
     color: black;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-weight: 400;
   }
   .main #contenido_testimonios, .container_test #contenido_testimonios, .container_quienes #contenido_testimonios, .container_servicios #contenido_testimonios, .container_contact #contenido_testimonios {
@@ -894,13 +904,17 @@ header .navbar-toggler:active, header .collapsed:active {
   .main #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h2, .container_test #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h2, .container_quienes #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h2, .container_servicios #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h2, .container_contact #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h2 {
     font-size: 2em;
   }
+  .main #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h3, .container_test #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h3, .container_quienes #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h3, .container_servicios #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h3, .container_contact #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h3 {
+    font-size: 1.3em !important;
+  }
   .main #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal #texto_contenido_principal, .container_test #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal #texto_contenido_principal, .container_quienes #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal #texto_contenido_principal, .container_servicios #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal #texto_contenido_principal, .container_contact #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal #texto_contenido_principal {
     width: 100%;
     height: 100px;
+    padding-inline: 20px;
     text-align: center;
     color: white;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.5em;
   }
   .main #contenido_principal, .container_test #contenido_principal, .container_quienes #contenido_principal, .container_servicios #contenido_principal, .container_contact #contenido_principal {
