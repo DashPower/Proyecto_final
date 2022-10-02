@@ -648,7 +648,7 @@ header .navbar-toggler:active, header .collapsed:active {
   margin: 0 5% 5% 5%;
 }
 .container_contact #contact_page #contact_contenido {
-  background-image: url(./../../img/Contactanos.jpeg);
+  background-image: url(../../img/Contactanos.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 50%;
