@@ -297,6 +297,7 @@ header .navbar-toggler:active, header .collapsed:active {
 }
 
 .card {
+  width: 85%;
   margin: 0 0.5em;
   box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
   border: none;
@@ -700,6 +701,22 @@ header .navbar-toggler:active, header .collapsed:active {
     margin-top: 10px;
     text-align: center;
   }
+  .main .card, .container_test .card, .container_quienes .card, .container_servicios .card, .container_contact .card {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .main .carousel-control-prev,
+.main .carousel-control-next, .container_test .carousel-control-prev,
+.container_test .carousel-control-next, .container_quienes .carousel-control-prev,
+.container_quienes .carousel-control-next, .container_servicios .carousel-control-prev,
+.container_servicios .carousel-control-next, .container_contact .carousel-control-prev,
+.container_contact .carousel-control-next {
+    background-color: transparent;
+  }
+  .main .carousel-control-next-icon, .main .carousel-control-prev-icon, .container_test .carousel-control-next-icon, .container_test .carousel-control-prev-icon, .container_quienes .carousel-control-next-icon, .container_quienes .carousel-control-prev-icon, .container_servicios .carousel-control-next-icon, .container_servicios .carousel-control-prev-icon, .container_contact .carousel-control-next-icon, .container_contact .carousel-control-prev-icon {
+    display: none;
+  }
   .main h2, .container_test h2, .container_quienes h2, .container_servicios h2, .container_contact h2 {
     margin-top: 20px;
     text-align: center;
@@ -937,6 +954,7 @@ header .navbar-toggler:active, header .collapsed:active {
     color: white;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.733), transparent);
     text-align: center;
+    height: 550px;
   }
   .main #contenido_principal #contenido1 > h2, .container_test #contenido_principal #contenido1 > h2, .container_quienes #contenido_principal #contenido1 > h2, .container_servicios #contenido_principal #contenido1 > h2, .container_contact #contenido_principal #contenido1 > h2 {
     font-size: 1.5em;
@@ -998,6 +1016,7 @@ header .navbar-toggler:active, header .collapsed:active {
   }
   .main .btn_medio, .container_test .btn_medio, .container_quienes .btn_medio, .container_servicios .btn_medio, .container_contact .btn_medio {
     width: 80%;
+    border-color: transparent;
   }
   footer {
     margin: 0px;

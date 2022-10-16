@@ -27,14 +27,27 @@ header{
 }
 
 .main,.container_test,.container_quienes,.container_servicios,.container_contact{
+  .card{
+    width: fit-content;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: transparent;
+    
+  }
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    display: none;
+  }
+
   h2{
     margin-top: 20px;
     text-align: center;
     font-weight: 700;
     font-size: 2rem;
-}
+  }
 button{
     align-self: center;
+  
 }
 #contact_page {
 
@@ -302,6 +315,7 @@ button{
             color: white;
             background: linear-gradient(180deg, rgba(0, 0, 0, 0.733), transparent);
             text-align: center;
+            height: 550px;
             >h2{
               font-size: 1.5em;
               font-weight: bold;
@@ -370,6 +384,7 @@ button{
   }
   .btn_medio{
   width: 80%;
+  border-color: transparent;
   }
 }
 footer{
