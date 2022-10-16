@@ -30,6 +30,10 @@ header{
   .card{
     width: fit-content;
   }
+  .card-text{
+    height: 200px;
+    margin-bottom: 0px;
+  }
   .carousel-control-prev,
   .carousel-control-next {
     background-color: transparent;
@@ -281,6 +285,7 @@ button{
 
             h3{
               font-size: 1.3em !important;
+              text-align: center;
             }
 
             #texto_contenido_principal {

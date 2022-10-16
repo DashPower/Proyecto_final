@@ -706,6 +706,10 @@ header .navbar-toggler:active, header .collapsed:active {
     width: -moz-fit-content;
     width: fit-content;
   }
+  .main .card-text, .container_test .card-text, .container_quienes .card-text, .container_servicios .card-text, .container_contact .card-text {
+    height: 200px;
+    margin-bottom: 0px;
+  }
   .main .carousel-control-prev,
 .main .carousel-control-next, .container_test .carousel-control-prev,
 .container_test .carousel-control-next, .container_quienes .carousel-control-prev,
@@ -923,6 +927,7 @@ header .navbar-toggler:active, header .collapsed:active {
   }
   .main #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h3, .container_test #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h3, .container_quienes #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h3, .container_servicios #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h3, .container_contact #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal h3 {
     font-size: 1.3em !important;
+    text-align: center;
   }
   .main #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal #texto_contenido_principal, .container_test #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal #texto_contenido_principal, .container_quienes #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal #texto_contenido_principal, .container_servicios #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal #texto_contenido_principal, .container_contact #contenido_testimonios #contenido_testimonio__principal #contenido_test__principal #texto_contenido_principal {
     width: 100%;

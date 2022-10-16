@@ -1,5 +1,6 @@
 const multipleCardCarousel_1 = $("#carouselExampleControls1");
 const multipleCardCarousel_2 = $("#carouselExampleControls2");
+const multipleCardCarousel_3 = $("#carouselExampleControls3");
 let isMobile = false
 
 
@@ -18,6 +19,10 @@ if (window.matchMedia("(min-width: 768px)").matches) { // Solo de 768 para arrib
   const carouselWidth_2 = multipleCardCarousel_2.find(".carousel-inner")[0].scrollWidth;
   const cardWidth_2 = multipleCardCarousel_2.find(".carousel-item").width();
   let scrollPosition_2 = 0;
+
+  const carouselWidth_3 = multipleCardCarousel_3.find(".carousel-inner")[0].scrollWidth;
+  const cardWidth_3 = multipleCardCarousel_3.find(".carousel-item").width();
+  let scrollPosition_3 = 0;
 
   multipleCardCarousel_1.find(".carousel-control-next").on("click", function () {
       
@@ -64,7 +69,7 @@ if (window.matchMedia("(min-width: 768px)").matches) { // Solo de 768 para arrib
     );
     
   }
-});
+  });
 
   multipleCardCarousel_2.find(".carousel-control-prev").on("click", function () {
       
@@ -77,6 +82,35 @@ if (window.matchMedia("(min-width: 768px)").matches) { // Solo de 768 para arrib
     } 
   });
 
+  multipleCardCarousel_3.find(".carousel-control-next").on("click", function () {
+    
+    if ( scrollPosition_3 < cardWidth_3 * (4 - 3) ) { // Mientras no sea el ultimo item
+      scrollPosition_3 += cardWidth_3;
+      multipleCardCarousel_3.find(".carousel-inner").animate(
+        { scrollLeft: scrollPosition_3 },
+        600
+      );
+    } else {
+      scrollPosition_3 = 0
+      multipleCardCarousel_3.find(".carousel-inner").animate(
+        { scrollLeft: scrollPosition_3 },
+        600
+      );
+      
+    }
+  });
+  
+  multipleCardCarousel_3.find(".carousel-control-prev").on("click", function () {
+        
+      if (scrollPosition_3 > 0) {
+        scrollPosition_3 -= cardWidth_3;
+        multipleCardCarousel_3.find(".carousel-inner").animate(
+          { scrollLeft: scrollPosition_3 },
+          600
+        );
+      } 
+  });
+
   setInterval(function(){
     if(isMobile) return
     multipleCardCarousel_1.find(".carousel-control-next").click()
@@ -86,10 +120,16 @@ if (window.matchMedia("(min-width: 768px)").matches) { // Solo de 768 para arrib
     if(isMobile) return
     multipleCardCarousel_2.find(".carousel-control-next").click()
   }, 3 * 1000)
+  
+  setInterval(function(){
+    if(isMobile) return
+    multipleCardCarousel_3.find(".carousel-control-next").click()
+  }, 3 * 1000)
 
 } else {
   multipleCardCarousel_1.addClass("slide");
   multipleCardCarousel_2.addClass("slide");
+  multipleCardCarousel_3.addClass("slide");
 }
 
 setInterval(mobileDetector,100)
@@ -99,12 +139,15 @@ function mobileDetector(){
     // estoy en telefono
     multipleCardCarousel_1.addClass("slide");
     multipleCardCarousel_2.addClass("slide");
+    multipleCardCarousel_3.addClass("slide");
     isMobile = true
     
   } else {
     // ya no estoy en telefono
     multipleCardCarousel_1.removeClass("slide");
     multipleCardCarousel_2.removeClass("slide");
+    multipleCardCarousel_3.removeClass("slide");
+    
     isMobile = false
     
   }
