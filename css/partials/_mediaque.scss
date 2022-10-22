@@ -27,9 +27,7 @@ header{
 }
 
 .main,.container_test,.container_quienes,.container_servicios,.container_contact{
-  .card{
-    width: fit-content;
-  }
+  
   .card-text{
     height: 200px;
     margin-bottom: 0px;
@@ -88,7 +86,7 @@ button{
         padding-bottom: 25px;
         text-align: center;
         justify-content: center;
-        width: 60%;
+        width: 100%;
     }
 
     form{
@@ -358,10 +356,27 @@ button{
   font-size: 1rem;
 }
   .testimonios{
-  padding: 50px 30px 50px 30px;
-  height: 650px;
-  background-color: #E6E6E6;
-    
+    padding: 50px 30px 50px 30px;
+    height: 650px;
+    background-color: #E6E6E6;
+    .carousel-inner{
+      .carousel-item{
+        .card{
+          height: 600px;
+          .img-wrapper{
+            height: unset;
+          }
+          .card-body{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .card-text{
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+    }
   }
   .quienes_somos {
   display: flex;
@@ -515,7 +530,7 @@ h2{
 
 @media screen and (min-width:768px) and (max-width:1199px){
   .container_test,.main{
-    .testimonios{
+    #carouselExampleControls3{
       height: 700px;
       .carousel-inner{
         .carousel-item{
@@ -536,6 +551,93 @@ h2{
         }
       }
     }
+    #carouselExampleControls2 {
+      height: 700px;
+      .carousel-inner{
+        .carousel-item{
+          .card{
+            height: 400px;
+            .img-wrapper{
+              height: unset;
+            }
+            .card-body{
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              .card-text{
+                font-size: 0.9rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    #carouselExampleControls1 {
+      //height: 700px;
+      .carousel-inner{
+        .carousel-item{
+          .card{
+            height: 500px;
+            .img-wrapper{
+              height: unset;
+            }
+            .card-body{
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              .card-text{
+                font-size: 0.9rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #contenido_principal {
+    #contenido1 {
+    display: flex;
+            gap:10px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+            width: 100%;
+            padding: 20px;
+            color: white;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.733), transparent);
+            text-align: center;
+            height: 550px;
+            >h2{
+              font-size: 1.5em !important;
+              font-weight: bold;
+              color: $colorbtn;
+              margin: 0px;
+            }
+            >h4{
+              font-size: 1.1em;
+            }
+          >p{
+              color: white;
+              font-size: 0.8em;
+              font-weight: 400;
+          }
+          > button {
+                 width: 50%;
+                 height: 50px;
+                 opacity: 0.75;
+                 transition:1s;
+                 background-color:$colorbtn;
+          }
+          
+          > button:hover{
+              opacity:1;
+              width:100%;
+          }
+          .testimonios{
 
+          height: 100px;
+          }
+    }
   }
 }

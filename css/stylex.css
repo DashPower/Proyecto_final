@@ -673,7 +673,7 @@ header .navbar-toggler:active, header .collapsed:active {
   padding-bottom: 25px;
   text-align: center;
   justify-content: center;
-  width: 60%;
+  width: 100%;
 }
 .container_contact #form_contact form {
   width: 80%;
@@ -700,11 +700,6 @@ header .navbar-toggler:active, header .collapsed:active {
   header .nav-link {
     margin-top: 10px;
     text-align: center;
-  }
-  .main .card, .container_test .card, .container_quienes .card, .container_servicios .card, .container_contact .card {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
   }
   .main .card-text, .container_test .card-text, .container_quienes .card-text, .container_servicios .card-text, .container_contact .card-text {
     height: 200px;
@@ -762,7 +757,7 @@ header .navbar-toggler:active, header .collapsed:active {
     padding-bottom: 25px;
     text-align: center;
     justify-content: center;
-    width: 60%;
+    width: 100%;
   }
   .main #form_contact form, .container_test #form_contact form, .container_quienes #form_contact form, .container_servicios #form_contact form, .container_contact #form_contact form {
     width: 80%;
@@ -997,6 +992,20 @@ header .navbar-toggler:active, header .collapsed:active {
     height: 650px;
     background-color: #E6E6E6;
   }
+  .main .testimonios .carousel-inner .carousel-item .card, .container_test .testimonios .carousel-inner .carousel-item .card, .container_quienes .testimonios .carousel-inner .carousel-item .card, .container_servicios .testimonios .carousel-inner .carousel-item .card, .container_contact .testimonios .carousel-inner .carousel-item .card {
+    height: 600px;
+  }
+  .main .testimonios .carousel-inner .carousel-item .card .img-wrapper, .container_test .testimonios .carousel-inner .carousel-item .card .img-wrapper, .container_quienes .testimonios .carousel-inner .carousel-item .card .img-wrapper, .container_servicios .testimonios .carousel-inner .carousel-item .card .img-wrapper, .container_contact .testimonios .carousel-inner .carousel-item .card .img-wrapper {
+    height: unset;
+  }
+  .main .testimonios .carousel-inner .carousel-item .card .card-body, .container_test .testimonios .carousel-inner .carousel-item .card .card-body, .container_quienes .testimonios .carousel-inner .carousel-item .card .card-body, .container_servicios .testimonios .carousel-inner .carousel-item .card .card-body, .container_contact .testimonios .carousel-inner .carousel-item .card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .main .testimonios .carousel-inner .carousel-item .card .card-body .card-text, .container_test .testimonios .carousel-inner .carousel-item .card .card-body .card-text, .container_quienes .testimonios .carousel-inner .carousel-item .card .card-body .card-text, .container_servicios .testimonios .carousel-inner .carousel-item .card .card-body .card-text, .container_contact .testimonios .carousel-inner .carousel-item .card .card-body .card-text {
+    font-size: 0.9rem;
+  }
   .main .quienes_somos, .container_test .quienes_somos, .container_quienes .quienes_somos, .container_servicios .quienes_somos, .container_contact .quienes_somos {
     display: flex;
     flex-direction: column;
@@ -1122,21 +1131,94 @@ header .navbar-toggler:active, header .collapsed:active {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .container_test .testimonios, .main .testimonios {
+  .container_test #carouselExampleControls3, .main #carouselExampleControls3 {
     height: 700px;
   }
-  .container_test .testimonios .carousel-inner .carousel-item .card, .main .testimonios .carousel-inner .carousel-item .card {
+  .container_test #carouselExampleControls3 .carousel-inner .carousel-item .card, .main #carouselExampleControls3 .carousel-inner .carousel-item .card {
     height: 600px;
   }
-  .container_test .testimonios .carousel-inner .carousel-item .card .img-wrapper, .main .testimonios .carousel-inner .carousel-item .card .img-wrapper {
+  .container_test #carouselExampleControls3 .carousel-inner .carousel-item .card .img-wrapper, .main #carouselExampleControls3 .carousel-inner .carousel-item .card .img-wrapper {
     height: unset;
   }
-  .container_test .testimonios .carousel-inner .carousel-item .card .card-body, .main .testimonios .carousel-inner .carousel-item .card .card-body {
+  .container_test #carouselExampleControls3 .carousel-inner .carousel-item .card .card-body, .main #carouselExampleControls3 .carousel-inner .carousel-item .card .card-body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-  .container_test .testimonios .carousel-inner .carousel-item .card .card-body .card-text, .main .testimonios .carousel-inner .carousel-item .card .card-body .card-text {
+  .container_test #carouselExampleControls3 .carousel-inner .carousel-item .card .card-body .card-text, .main #carouselExampleControls3 .carousel-inner .carousel-item .card .card-body .card-text {
     font-size: 0.9rem;
+  }
+  .container_test #carouselExampleControls2, .main #carouselExampleControls2 {
+    height: 700px;
+  }
+  .container_test #carouselExampleControls2 .carousel-inner .carousel-item .card, .main #carouselExampleControls2 .carousel-inner .carousel-item .card {
+    height: 400px;
+  }
+  .container_test #carouselExampleControls2 .carousel-inner .carousel-item .card .img-wrapper, .main #carouselExampleControls2 .carousel-inner .carousel-item .card .img-wrapper {
+    height: unset;
+  }
+  .container_test #carouselExampleControls2 .carousel-inner .carousel-item .card .card-body, .main #carouselExampleControls2 .carousel-inner .carousel-item .card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .container_test #carouselExampleControls2 .carousel-inner .carousel-item .card .card-body .card-text, .main #carouselExampleControls2 .carousel-inner .carousel-item .card .card-body .card-text {
+    font-size: 0.9rem;
+  }
+  .container_test #carouselExampleControls1 .carousel-inner .carousel-item .card, .main #carouselExampleControls1 .carousel-inner .carousel-item .card {
+    height: 500px;
+  }
+  .container_test #carouselExampleControls1 .carousel-inner .carousel-item .card .img-wrapper, .main #carouselExampleControls1 .carousel-inner .carousel-item .card .img-wrapper {
+    height: unset;
+  }
+  .container_test #carouselExampleControls1 .carousel-inner .carousel-item .card .card-body, .main #carouselExampleControls1 .carousel-inner .carousel-item .card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .container_test #carouselExampleControls1 .carousel-inner .carousel-item .card .card-body .card-text, .main #carouselExampleControls1 .carousel-inner .carousel-item .card .card-body .card-text {
+    font-size: 0.9rem;
+  }
+  #contenido_principal #contenido1 {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.733), transparent);
+    text-align: center;
+    height: 550px;
+  }
+  #contenido_principal #contenido1 > h2 {
+    font-size: 1.5em !important;
+    font-weight: bold;
+    color: rgb(255, 0, 255);
+    margin: 0px;
+  }
+  #contenido_principal #contenido1 > h4 {
+    font-size: 1.1em;
+  }
+  #contenido_principal #contenido1 > p {
+    color: white;
+    font-size: 0.8em;
+    font-weight: 400;
+  }
+  #contenido_principal #contenido1 > button {
+    width: 50%;
+    height: 50px;
+    opacity: 0.75;
+    transition: 1s;
+    background-color: rgb(255, 0, 255);
+  }
+  #contenido_principal #contenido1 > button:hover {
+    opacity: 1;
+    width: 100%;
+  }
+  #contenido_principal #contenido1 .testimonios {
+    height: 100px;
   }
 }/*# sourceMappingURL=stylex.css.map */
