@@ -684,7 +684,7 @@ header .navbar-toggler:active, header .collapsed:active {
   color: white;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   * a:link {
     text-decoration: none;
   }
@@ -1069,5 +1069,74 @@ header .navbar-toggler:active, header .collapsed:active {
   h2 {
     margin: 0px;
     padding: 0px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container_quienes #contenedor_quienes_somos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    background-color: #E6E6E6;
+  }
+  .container_quienes #contenedor_quienes_somos .contenedores_quienes_somos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .container_quienes #contenedor_quienes_somos .contenedores_quienes_somos > h2 {
+    text-align: center;
+    padding-block: 10px;
+  }
+  .container_quienes #contenedor_quienes_somos .contenedores_quienes_somos1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .container_quienes #contenedor_quienes_somos .contenedores_quienes_somos1 > h2 {
+    text-align: center;
+    padding-block: 10px;
+  }
+  .container_quienes #contenedor_quienes_somos .contenedores_quienes_somos__img {
+    width: 100%;
+    height: unset;
+    margin-bottom: 10px;
+  }
+  .container_quienes #contenedor_quienes_somos .texto_quienes_somos {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1em;
+    color: black;
+    margin-bottom: 10px;
+    font-weight: 400;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .container_quienes #contenedor_quienes_somos .contenedores_quienes_somos__img {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container_test .testimonios, .main .testimonios {
+    height: 700px;
+  }
+  .container_test .testimonios .carousel-inner .carousel-item .card, .main .testimonios .carousel-inner .carousel-item .card {
+    height: 600px;
+  }
+  .container_test .testimonios .carousel-inner .carousel-item .card .img-wrapper, .main .testimonios .carousel-inner .carousel-item .card .img-wrapper {
+    height: unset;
+  }
+  .container_test .testimonios .carousel-inner .carousel-item .card .card-body, .main .testimonios .carousel-inner .carousel-item .card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .container_test .testimonios .carousel-inner .carousel-item .card .card-body .card-text, .main .testimonios .carousel-inner .carousel-item .card .card-body .card-text {
+    font-size: 0.9rem;
   }
 }/*# sourceMappingURL=stylex.css.map */

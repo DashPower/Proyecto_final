@@ -1,4 +1,4 @@
-@media screen and (max-width: 480px) {
+@media screen and (max-width:768px) {
 *{ a:link {
     text-decoration: none;
   }
@@ -102,7 +102,7 @@ button{
     }
         
 }
-  #contenedores_servicios {
+#contenedores_servicios {
         
     display: flex;
     padding: 0px;
@@ -192,7 +192,7 @@ button{
         
     }
 }
-  #contenedor_quienes_somos {
+#contenedor_quienes_somos {
 
     display: flex;
     flex-direction: column;
@@ -243,7 +243,7 @@ button{
     
     
 }
-  #contenido_testimonios {
+#contenido_testimonios {
     display: flex;
     flex-direction: column;
     background-image: url(./../../img/Negocios.jpg);
@@ -301,7 +301,7 @@ button{
         }
     }
 }
-  #contenido_principal {
+#contenido_principal {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -442,4 +442,100 @@ h2{
   padding: 0px;
 }
 
+}
+@media screen and (min-width:768px) and (max-width:1023px){
+  .container_quienes {
+    #contenedor_quienes_somos {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+        background-color: #E6E6E6;
+        
+        .contenedores_quienes_somos{
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            
+            >h2 {
+                text-align: center;
+                padding-block:10px;
+            }
+        
+        }
+        .contenedores_quienes_somos1{
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          
+          >h2 {
+              text-align: center;
+              padding-block:10px;
+          }
+      
+      }
+        .contenedores_quienes_somos__img{
+            width: 100%;
+            height: unset;
+            margin-bottom: 10px;
+        }
+        .texto_quienes_somos{
+            margin-top: 10px;
+            text-align: center;
+            font-size: 1em;
+            color: black;
+            margin-bottom: 10px;
+            font-weight: 400;
+        }    
+        
+        
+    }
+  }
+}
+
+@media screen and (min-width:1024px) and (max-width:1199px){ // laptop pequeño
+  
+  .container_quienes{
+    #contenedor_quienes_somos{
+      .contenedores_quienes_somos__img{
+        width: 100%;
+        height: 400px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width:768px) and (max-width:1199px){
+  .container_test,.main{
+    .testimonios{
+      height: 700px;
+      .carousel-inner{
+        .carousel-item{
+          .card{
+            height: 600px;
+            .img-wrapper{
+              height: unset;
+            }
+            .card-body{
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              .card-text{
+                font-size: 0.9rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
 }
