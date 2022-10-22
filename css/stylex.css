@@ -989,7 +989,7 @@ header .navbar-toggler:active, header .collapsed:active {
   }
   .main .testimonios, .container_test .testimonios, .container_quienes .testimonios, .container_servicios .testimonios, .container_contact .testimonios {
     padding: 50px 30px 50px 30px;
-    height: 650px;
+    height: 700px;
     background-color: #E6E6E6;
   }
   .main .testimonios .carousel-inner .carousel-item .card, .container_test .testimonios .carousel-inner .carousel-item .card, .container_quienes .testimonios .carousel-inner .carousel-item .card, .container_servicios .testimonios .carousel-inner .carousel-item .card, .container_contact .testimonios .carousel-inner .carousel-item .card {
@@ -1078,6 +1078,11 @@ header .navbar-toggler:active, header .collapsed:active {
   h2 {
     margin: 0px;
     padding: 0px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .card {
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {

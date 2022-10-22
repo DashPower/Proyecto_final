@@ -27,7 +27,6 @@ header{
 }
 
 .main,.container_test,.container_quienes,.container_servicios,.container_contact{
-  
   .card-text{
     height: 200px;
     margin-bottom: 0px;
@@ -357,7 +356,7 @@ button{
 }
   .testimonios{
     padding: 50px 30px 50px 30px;
-    height: 650px;
+    height: 700px;
     background-color: #E6E6E6;
     .carousel-inner{
       .carousel-item{
@@ -458,7 +457,13 @@ h2{
 }
 
 }
-@media screen and (min-width:768px) and (max-width:1023px){
+@media screen and (max-width:426px) {
+  .card {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px){ //tablet
   .container_quienes {
     #contenedor_quienes_somos {
 
@@ -543,7 +548,7 @@ h2{
 
 }
 
-@media screen and (min-width:768px) and (max-width:1199px){
+@media screen and (min-width:768px) and (max-width:1199px){ //pc
   .container_test,.main{
     #carouselExampleControls3{
       height: 700px;
