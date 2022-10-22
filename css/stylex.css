@@ -1205,13 +1205,13 @@ header .navbar-toggler:active, header .collapsed:active {
     height: 550px;
   }
   #contenido_principal #contenido1 > h2 {
-    font-size: 1em !important;
+    font-size: 1.2em !important;
     font-weight: bold;
     color: rgb(255, 0, 255);
     margin: 0px;
   }
   #contenido_principal #contenido1 > h4 {
-    font-size: 1.1em;
+    font-size: 1em !important;
   }
   #contenido_principal #contenido1 > p {
     color: white;
